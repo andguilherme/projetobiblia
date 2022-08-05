@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/estiloprincipal.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../css/estilo-gn.css">
+  <title>Biblia de Estudo Online</title>
+  <script>
+    function lvr() {
+      var select = document.getElementById('tst');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+    function cpt() {
+      var select = document.getElementById('icap');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <a href="../index.html"> <img src="../img/cruz-a-tinta.png" /></a>
+      <em>Bíblia de Estudo Online</em>
+    </div>
+  </header>
+  <nav>
+    <ul class="versoes">
+      <li><a href="NVI/gn10_nvi.html" title="Nova Versão Internacional">NVI</a></li>
+      <li><a href="#" title="Almeida Corrigida e Fiel">ACF</a></li>
+      <li><a href="NTLH/gn11_ntlh.html" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+
+    </ul>
+    <ul class="ferramentas">
+      <li><a href="comentario/gn1-1_cmt.html" title="Comentário Bíblico">COMENTÁRIO</a></li>
+      <li><a href="interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+      <li><a href="#" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+      <li><a href="cruzadas/gn1-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+    </ul>
+
+    <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+    <div class="menu-bar mobile">
+      <ul>
+
+        <li><a href="#">Ferramentas</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="comentario/gn1-1_cmt.html">Comentário</a></li>
+              <li><a href="interlinear/gn1-1_int.html">Interlinear</a></li>
+              <li><a href="#">Dicionário</a></li>
+              <li><a href="cruzadas/gn1-1_crz.html">Cruzadas</a>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Versões</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="NVI/gn11_nvi.html">NVI</a></li>
+              <li><a href="#">ACF</a></li>
+              <li><a href="NTLH/gn50_ntlh.html">NTLH</a></li>
+            </ul>
+          </div>
+      </ul>
+
+    </div>
+  </nav>
+  <main>
+    <div id="corpo">
+      <div class="breadscrumbs">
+        <a href="../index.html">Bíblia</a> &shy; > <a href="#">ACF</a>
+        <span style="color: #606060">&shy; > Gênesis &shy;</span>
+      </div>
+      <div id="corpo">
+        <div class="sel_livros">
+          <select name="tst" id="tst" onchange="lvr()">
+            <!-- <selected disabled>Livro</option> -->
+            <optgroup label="Antigo Testamento">
+              <option selected value="../genesis/gn1_acf.html">Gênesis</option>
+              <option value="../exodo/acf/ex1_acf.html">Êxodo</option>
+              <option value="../levitico/acf/lv1_acf.html">Levítico</option>
+              <option value="../numeros/acf/nm1_acf.html">Números</option>
+              <option value="../deuteronomio/acf/dt1_acf.html">Deuteronômio</option>
+              <option value="../josue/acf/js1_acf.html">Josué</option>
+              <option value="../juizes/acf/jz1_acf.html">Juízes</option>
+              <option value="../rute/acf/rt1_acf.html">Rute</option>
+              <option value="../1Samuel/acf/1sm1_acf.html">1 Samuel</option>
+              <option value="../2Samuel/acf/2sm1_acf.html">2 Samuel</option>
+              <option value="../1Reis/acf/1rs_acf.html">1 Reis</option>
+              <option value="../2Reis/acf/2rs_acf.html">2 Reis</option>
+              <option value="../1cronicas/acf/1cr1_acf.html">1 Crônicas</option>
+              <option value="../2cronicas/acf/2cr1_acf.html">2 Crônicas</option>
+              <option value="../esdras/acf/es1_acf.html">Esdras</option>
+              <option value="../neemias/acf/nm1_acf.html">Neemias</option>
+              <option value="../ester/acf/es1_acf.html">Ester</option>
+              <option value="../jo/acf/jo1_acf.html">Jó</option>
+              <option value="../salmos/acf/sl1_acf.html">Salmos</option>
+              <option value="../proverbios/acf/pv1_acf.html">Provérbios</option>
+              <option value="../eclesiastes/acf/ec1_acf.html">Eclesiastes</option>
+              <option value="../cantares/acf/ct1_acf.html">Cantares</option>
+              <option value="../isaias/acf/is1_acf.html">Isaías</option>
+              <option value="../jeremias/acf/jr1_acf.html">Jeremias</option>
+              <option value="../ezequiel/acf/ez1_acf.html">Ezequiel</option>
+              <option value="../daniel/acf/dn1_acf.html">Daniel</option>
+              <option value="../oseias/acf/os1_acf.html">Oséias</option>
+              <option value="../joel/acf/jl1_acf.html">Joel</option>
+              <option value="../amos/acf/am1_acf.html">Amós</option>
+              <option value="../obadias/acf/ob1_acf.html">Obadias</option>
+              <option value="../jonas/acf/jn1_acf.html">Jonas</option>
+              <option value="../miqueias/acf/mq1_acf.html">Miquéias</option>
+              <option value="../naum/acf/nm1_acf.html">Naum</option>
+              <option value="../habacuque/acf/hb1_acf.html">Habacuque</option>
+              <option value="../sofonias/acf/sf1_acf.html">Sofonias</option>
+              <option value="../ageu/acf/ag1_acf.html">Ageu</option>
+              <option value="../zacarias/acf/zc1_acf.html">Zacarias</option>
+              <option value="../malaquias/acf/ml1_acf.html">Malaquias</option>
+            </optgroup>
+            <optgroup label="Novo Testamento">
+              <option value="../Mateus/acf/mt1_acf.html">Mateus</option>
+              <option value="../Marcos/acf/mc1_acf.html">Marcos</option>
+              <option value="../Lucas/acf/lc1_acf.html">Lucas</option>
+              <option value="../João/acf/jo1_acf.html">João</option>
+              <option value="../Atos/acf/at1_acf.html">Atos</option>
+              <option value="../Romanos/acf/rm1_acf.html">Romanos</option>
+              <option value="../1Coríntios/acf/1co1_acf.html">1 Coríntios</option>
+              <option value="../2Coríntios/acf/2co1_acf.html">2 Coríntios</option>
+              <option value="../Gálatas/acf/gl1_acf.html">Gálatas</option>
+              <option value="../Efésios/acf/ef1_acf.html">Efésios</option>
+              <option value="../Filipenses/acf/fp1_acf.html">Filipenses</option>
+              <option value="../Colossenses/acf/cl1_acf.html">Colossenses</option>
+              <option value="../1Tessalonissences/acf/1ts1_acf.html">1 Tessalonissences</option>
+              <option value="../1Tessalonissences/acf/2ts1_acf.html">1 Tessalonissences</option>
+              <option value="../1Timóteo/acf/1tm1_acf.html">1 Timóteo</option>
+              <option value="../2Timóteo/acf/2tm1_acf.html">2 Timóteo</option>
+              <option value="../Tito/acf/tt1_acf.html">Tito</option>
+              <option value="../Filemom/acf/fl1_acf.html">Filemom</option>
+              <option value="../Hebreus/acf/hb1_acf.html">Hebreus</option>
+              <option value="../Tiago/acf/tg1_acf.html">Tiago</option>
+              <option value="../1Pedro/acf/1pe1_acf.html">1 Pedro</option>
+              <option value="../2Pedro/acf/2pe1_acf.html">2 Pedro</option>
+              <option value="../1João/acf/1jo1_acf.html">1 João</option>
+              <option value="../2João/acf/2jo1_acf.html">2 João</option>
+              <option value="../3João/acf/3jo1_acf.html">3 João</option>
+              <option value="../Judas/acf/jd1_acf.html">Judas</option>
+              <option value="../Apocalipse/acf/ap1_acf.html">Apocalipse</option>
+            </optgroup>
+          </select>
+          <select name="vers" id="icap" onchange="cpt()">
+            <option value="gn1_acf.html">1</option>
+            <option value="gn2_acf.html">2</option>
+            <option value="gn3_acf.html">3</option>
+            <option value="gn4_acf.html">4</option>
+            <option value="gn5_acf.html">5</option>
+            <option value="gn6_acf.html">6</option>
+            <option value="gn7_acf.html">7</option>
+            <option value="gn8_acf.html">8</option>
+            <option value="gn9_acf.html">9</option>
+            <option value="gn10_acf.html">10</option>
+            <option value="gn11_acf.html" selected>11</option>
+            <option value="gn12_acf.html">12</option>
+            <option value="gn13_acf.html">13</option>
+            <option value="gn14_acf.html">14</option>
+            <option value="gn15_acf.html">15</option>
+            <option value="gn16_acf.html">16</option>
+            <option value="gn17_acf.html">17</option>
+            <option value="gn18_acf.html">18</option>
+            <option value="gn19_acf.html">19</option>
+            <option value="gn20_acf.html">20</option>
+            <option value="gn21_acf.html">21</option>
+            <option value="gn22_acf.html">22</option>
+            <option value="gn23_acf.html">23</option>
+            <option value="gn24_acf.html">24</option>
+            <option value="gn25_acf.html">25</option>
+            <option value="gn26_acf.html">26</option>
+            <option value="gn27_acf.html">27</option>
+            <option value="gn28_acf.html">28</option>
+            <option value="gn29_acf.html">29</option>
+            <option value="gn30_acf.html">30</option>
+            <option value="gn31_acf.html">31</option>
+            <option value="gn32_acf.html">32</option>
+            <option value="gn33_acf.html">33</option>
+            <option value="gn34_acf.html">34</option>
+            <option value="gn35_acf.html">35</option>
+            <option value="gn36_acf.html">36</option>
+            <option value="gn37_acf.html">37</option>
+            <option value="gn38_acf.html">38</option>
+            <option value="gn39_acf.html">39</option>
+            <option value="gn40_acf.html">40</option>
+            <option value="gn41_acf.html">41</option>
+            <option value="gn42_acf.html">42</option>
+            <option value="gn43_acf.html">43</option>
+            <option value="gn44_acf.html">44</option>
+            <option value="gn45_acf.html">45</option>
+            <option value="gn46_acf.html">46</option>
+            <option value="gn47_acf.html">47</option>
+            <option value="gn48_acf.html">48</option>
+            <option value="gn49_acf.html">49</option>
+            <option value="gn50_acf.html">50</option>
+          </select>
+        </div>
+        <br>
+        <p class="tversao">Versão Almeida Corrigida e Fiel - ACF </p>
+
+        <div class="texto">
+          <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
+          <!-- <br> -->
+
+          <h1>Gênesis 11</h1>
+          <hr>
+          <p id="gn"> 1 E ERA toda a terra de uma mesma língua e de uma mesma fala.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn"> 2 E aconteceu que, partindo eles do oriente, acharam um vale na terra de Sinar; e habitaram ali.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">3 E disseram uns aos outros: Eia, façamos tijolos e queimemo-los bem. E foi-lhes o tijolo por
+            pedra, e o betume por cal.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">4 E disseram: Eia, edifiquemos nós uma cidade e uma torre cujo cume toque nos céus, e façamo-nos um
+            nome, para que não sejamos espalhados sobre a face de toda a terra.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">5 Então desceu o SENHOR para ver a cidade e a torre que os filhos dos homens edificavam;<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">6 E o SENHOR disse: Eis que o povo é um, e todos têm uma mesma língua; e isto é o que começam a
+            fazer; e agora, não haverá restrição para tudo o que eles intentarem fazer.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">7 Eia, desçamos e confundamos ali a sua língua, para que não entenda um a língua do outro.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">8 Assim o SENHOR os espalhou dali sobre a face de toda a terra; e cessaram de edificar a cidade.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">9 Por isso se chamou o seu nome Babel, porquanto ali confundiu o SENHOR a língua de toda a terra, e
+            dali os espalhou o SENHOR sobre a face de toda a terra.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">10 Estas são as gerações de Sem: Sem era da idade de cem anos e gerou a Arfaxade, dois anos depois
+            do dilúvio.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">11 E viveu Sem, depois que gerou a Arfaxade, quinhentos anos, e gerou filhos e filhas.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">12 E viveu Arfaxade trinta e cinco anos, e gerou a Selá.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">13 E viveu Arfaxade depois que gerou a Selá, quatrocentos e três anos, e gerou filhos e filhas.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">14 E viveu Selá trinta anos, e gerou a Éber;<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">15 E viveu Selá, depois que gerou a Éber, quatrocentos e três anos, e gerou filhos e filhas.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">16 E viveu Éber trinta e quatro anos, e gerou a Pelegue.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">17 E viveu Éber, depois que gerou a Pelegue, quatrocentos e trinta anos, e gerou filhos e filhas.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">18 E viveu Pelegue trinta anos, e gerou a Reú.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">19 E viveu Pelegue, depois que gerou a Reú, duzentos e nove anos, e gerou filhos e filhas.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">20 E viveu Reú trinta e dois anos, e gerou a Serugue.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">21 E viveu Reú, depois que gerou a Serugue, duzentos e sete anos, e gerou filhos e filhas.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">22 E viveu Serugue trinta anos, e gerou a Naor.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">23 E viveu Serugue, depois que gerou a Naor, duzentos anos, e gerou filhos e filhas.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">24 E viveu Naor vinte e nove anos, e gerou a Terá.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">25 E viveu Naor, depois que gerou a Terá, cento e dezenove anos, e gerou filhos e filhas.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">26 E viveu Terá setenta anos, e gerou a Abrão, a Naor, e a Harã.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">27 E estas são as gerações de Terá: Terá gerou a Abrão, a Naor, e a Harã; e Harã gerou a Ló.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">28 E morreu Harã estando seu pai Terá ainda vivo, na terra do seu nascimento, em Ur dos caldeus.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">29 E tomaram Abrão e Naor mulheres para si: o nome da mulher de Abrão era Sarai, e o nome da mulher
+            de Naor era Milca, filha de Harã, pai de Milca e pai de Iscá.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">30 E Sarai foi estéril, não tinha filhos.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">31 E tomou Terá a Abrão seu filho, e a Ló, filho de Harã, filho de seu filho, e a Sarai sua nora,
+            mulher de seu filho Abrão, e saiu com eles de Ur dos caldeus, para ir à terra de Canaã; e vieram até Harã, e
+            habitaram ali.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">32 E foram os dias de Terá duzentos e cinco anos, e morreu Terá em Harã.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+
+        </div>
+      </div>
+
+  </main>
+
+  <aside id="mcap">
+    <h3 id="tcapitulos">CAPÍTULOS:</h3>
+    <a href="../genesis/gn1_acf.html">1</a>
+    <a href="../genesis/gn2_acf.html">2</a>
+    <a href="../genesis/gn3_acf.html">3</a>
+    <a href="../genesis/gn4_acf.html">4</a>
+    <a href="../genesis/gn5_acf.html">5</a>
+    <a href="../genesis/gn6_acf.html">6</a>
+    <a href="../genesis/gn7_acf.html">7</a>
+    <a href="../genesis/gn8_acf.html">8</a>
+    <a href="../genesis/gn9_acf.html">9</a>
+    <a href="../genesis/gn10_acf.html">10</a>
+    <a class="sel" href="#">11</a>
+    <a href="../genesis/gn12_acf.html">12</a>
+    <a href="../genesis/gn13_acf.html">13</a>
+    <a href="../genesis/gn14_acf.html">14</a>
+    <a href="../genesis/gn15_acf.html">15</a>
+    <a href="../genesis/gn16_acf.html">16</a>
+    <a href="../genesis/gn17_acf.html">17</a>
+    <a href="../genesis/gn18_acf.html">18</a>
+    <a href="../genesis/gn19_acf.html">19</a>
+    <a href="../genesis/gn20_acf.html">20</a>
+    <a href="../genesis/gn21_acf.html">21</a>
+    <a href="../genesis/gn22_acf.html">22</a>
+    <a href="../genesis/gn23_acf.html">23</a>
+    <a href="../genesis/gn24_acf.html">24</a>
+    <a href="../genesis/gn25_acf.html">25</a>
+    <a href="../genesis/gn26_acf.html">26</a>
+    <a href="../genesis/gn27_acf.html">27</a>
+    <a href="../genesis/gn28_acf.html">28</a>
+    <a href="../genesis/gn29_acf.html">29</a>
+    <a href="../genesis/gn30_acf.html">30</a>
+    <a href="../genesis/gn31_acf.html">31</a>
+    <a href="../genesis/gn32_acf.html">32</a>
+    <a href="../genesis/gn33_acf.html">33</a>
+    <a href="../genesis/gn34_acf.html">34</a>
+    <a href="../genesis/gn35_acf.html">35</a>
+    <a href="../genesis/gn36_acf.html">36</a>
+    <a href="../genesis/gn37_acf.html">37</a>
+    <a href="../genesis/gn38_acf.html">38</a>
+    <a href="../genesis/gn39_acf.html">39</a>
+    <a href="../genesis/gn40_acf.html">40</a>
+    <a href="../genesis/gn41_acf.html">41</a>
+    <a href="../genesis/gn42_acf.html">42</a>
+    <a href="../genesis/gn43_acf.html">43</a>
+    <a href="../genesis/gn44_acf.html">44</a>
+    <a href="../genesis/gn45_acf.html">45</a>
+    <a href="../genesis/gn46_acf.html">46</a>
+    <a href="../genesis/gn47_acf.html">47</a>
+    <a href="../genesis/gn48_acf.html">48</a>
+    <a href="../genesis/gn49_acf.html">49</a>
+    <a href="../genesis/gn50_acf.html">50</a>
+  </aside>
+  <div class="setas">
+    <a href="../genesis/gn10_acf.html"><i class='bx bx-left-arrow'></i></a>
+    <a href="../genesis/gn12_acf.html"><i class='bx bx-right-arrow'></i></a>
+  </div>
+</body>
+<footer id="rodape">
+  &copy; &shy;Biblia de Estudo Online
+</footer>
+
+</html>

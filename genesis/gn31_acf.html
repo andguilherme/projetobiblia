@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/estiloprincipal.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../css/estilo-gn.css">
+  <title>Biblia de Estudo Online</title>
+  <script>
+    function lvr() {
+      var select = document.getElementById('tst');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+    function cpt() {
+      var select = document.getElementById('icap');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <a href="../index.html"> <img src="../img/cruz-a-tinta.png" /></a>
+      <em>Bíblia de Estudo Online</em>
+    </div>
+  </header>
+  <nav>
+    <ul class="versoes">
+      <li><a href="NVI/gn31_nvi.html" title="Nova Versão Internacional">NVI</a></li>
+      <li><a href="gn31_acf.html" title="Almeida Corrigida e Fiel">ACF</a></li>
+      <li><a href="NTLH/gn31_ntlh.html" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+    </ul>
+    <ul class="ferramentas">
+      <li><a href="comentario/gn1-1_cmt.html" title="Comentário Bíblico">COMENTÁRIO</a></li>
+      <li><a href="interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+      <li><a href="#" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+      <li><a href="cruzadas/gn1-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+    </ul>
+    <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+    <div class="menu-bar mobile">
+      <ul>
+
+        <li><a href="#">Ferramentas</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="comentario/gn1-1_cmt.html">Comentário</a></li>
+              <li><a href="interlinear/gn1-1_int.html">Interlinear</a></li>
+              <li><a href="#">Dicionário</a></li>
+              <li><a href="cruzadas/gn1-1_crz.html">Cruzadas</a>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Versões</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="NVI/gn31_nvi.html">NVI</a></li>
+              <li><a href="#">ACF</a></li>
+              <li><a href="NTLH/gn31_ntlh.html">NTLH</a></li>
+            </ul>
+          </div>
+      </ul>
+
+    </div>
+  </nav>
+  <main>
+    <div id="corpo">
+      <div class="breadscrumbs">
+        <a href="../index.html">Bíblia</a> &shy; > <a href="#">ACF</a>
+        <span style="color: #606060">&shy; > Gênesis &shy;</span>
+      </div>
+      <div id="corpo">
+        <div class="sel_livros">
+          <select name="tst" id="tst" onchange="lvr()">
+            <!-- <selected disabled>Livro</option> -->
+            <optgroup label="Antigo Testamento">
+              <option selected value="../genesis/gn1_acf.html">Gênesis</option>
+              <option value="../exodo/acf/ex1_acf.html">Êxodo</option>
+              <option value="../levitico/acf/lv1_acf.html">Levítico</option>
+              <option value="../numeros/acf/nm1_acf.html">Números</option>
+              <option value="../deuteronomio/acf/dt1_acf.html">Deuteronômio</option>
+              <option value="../josue/acf/js1_acf.html">Josué</option>
+              <option value="../juizes/acf/jz1_acf.html">Juízes</option>
+              <option value="../rute/acf/rt1_acf.html">Rute</option>
+              <option value="../1Samuel/acf/1sm1_acf.html">1 Samuel</option>
+              <option value="../2Samuel/acf/2sm1_acf.html">2 Samuel</option>
+              <option value="../1Reis/acf/1rs_acf.html">1 Reis</option>
+              <option value="../2Reis/acf/2rs_acf.html">2 Reis</option>
+              <option value="../1cronicas/acf/1cr1_acf.html">1 Crônicas</option>
+              <option value="../2cronicas/acf/2cr1_acf.html">2 Crônicas</option>
+              <option value="../esdras/acf/es1_acf.html">Esdras</option>
+              <option value="../neemias/acf/nm1_acf.html">Neemias</option>
+              <option value="../ester/acf/es1_acf.html">Ester</option>
+              <option value="../jo/acf/jo1_acf.html">Jó</option>
+              <option value="../salmos/acf/sl1_acf.html">Salmos</option>
+              <option value="../proverbios/acf/pv1_acf.html">Provérbios</option>
+              <option value="../eclesiastes/acf/ec1_acf.html">Eclesiastes</option>
+              <option value="../cantares/acf/ct1_acf.html">Cantares</option>
+              <option value="../isaias/acf/is1_acf.html">Isaías</option>
+              <option value="../jeremias/acf/jr1_acf.html">Jeremias</option>
+              <option value="../ezequiel/acf/ez1_acf.html">Ezequiel</option>
+              <option value="../daniel/acf/dn1_acf.html">Daniel</option>
+              <option value="../oseias/acf/os1_acf.html">Oséias</option>
+              <option value="../joel/acf/jl1_acf.html">Joel</option>
+              <option value="../amos/acf/am1_acf.html">Amós</option>
+              <option value="../obadias/acf/ob1_acf.html">Obadias</option>
+              <option value="../jonas/acf/jn1_acf.html">Jonas</option>
+              <option value="../miqueias/acf/mq1_acf.html">Miquéias</option>
+              <option value="../naum/acf/nm1_acf.html">Naum</option>
+              <option value="../habacuque/acf/hb1_acf.html">Habacuque</option>
+              <option value="../sofonias/acf/sf1_acf.html">Sofonias</option>
+              <option value="../ageu/acf/ag1_acf.html">Ageu</option>
+              <option value="../zacarias/acf/zc1_acf.html">Zacarias</option>
+              <option value="../malaquias/acf/ml1_acf.html">Malaquias</option>
+            </optgroup>
+            <optgroup label="Novo Testamento">
+              <option value="../Mateus/acf/mt1_acf.html">Mateus</option>
+              <option value="../Marcos/acf/mc1_acf.html">Marcos</option>
+              <option value="../Lucas/acf/lc1_acf.html">Lucas</option>
+              <option value="../João/acf/jo1_acf.html">João</option>
+              <option value="../Atos/acf/at1_acf.html">Atos</option>
+              <option value="../Romanos/acf/rm1_acf.html">Romanos</option>
+              <option value="../1Coríntios/acf/1co1_acf.html">1 Coríntios</option>
+              <option value="../2Coríntios/acf/2co1_acf.html">2 Coríntios</option>
+              <option value="../Gálatas/acf/gl1_acf.html">Gálatas</option>
+              <option value="../Efésios/acf/ef1_acf.html">Efésios</option>
+              <option value="../Filipenses/acf/fp1_acf.html">Filipenses</option>
+              <option value="../Colossenses/acf/cl1_acf.html">Colossenses</option>
+              <option value="../1Tessalonissences/acf/1ts1_acf.html">1 Tessalonissences</option>
+              <option value="../1Tessalonissences/acf/2ts1_acf.html">1 Tessalonissences</option>
+              <option value="../1Timóteo/acf/1tm1_acf.html">1 Timóteo</option>
+              <option value="../2Timóteo/acf/2tm1_acf.html">2 Timóteo</option>
+              <option value="../Tito/acf/tt1_acf.html">Tito</option>
+              <option value="../Filemom/acf/fl1_acf.html">Filemom</option>
+              <option value="../Hebreus/acf/hb1_acf.html">Hebreus</option>
+              <option value="../Tiago/acf/tg1_acf.html">Tiago</option>
+              <option value="../1Pedro/acf/1pe1_acf.html">1 Pedro</option>
+              <option value="../2Pedro/acf/2pe1_acf.html">2 Pedro</option>
+              <option value="../1João/acf/1jo1_acf.html">1 João</option>
+              <option value="../2João/acf/2jo1_acf.html">2 João</option>
+              <option value="../3João/acf/3jo1_acf.html">3 João</option>
+              <option value="../Judas/acf/jd1_acf.html">Judas</option>
+              <option value="../Apocalipse/acf/ap1_acf.html">Apocalipse</option>
+            </optgroup>
+          </select>
+          <select name="vers" id="icap" onchange="cpt()">
+            <option value="gn1_acf.html">1</option>
+            <option value="gn2_acf.html">2</option>
+            <option value="gn3_acf.html">3</option>
+            <option value="gn4_acf.html">4</option>
+            <option value="gn5_acf.html">5</option>
+            <option value="gn6_acf.html">6</option>
+            <option value="gn7_acf.html">7</option>
+            <option value="gn8_acf.html">8</option>
+            <option value="gn9_acf.html">9</option>
+            <option value="gn10_acf.html">10</option>
+            <option value="gn11_acf.html">11</option>
+            <option value="gn12_acf.html">12</option>
+            <option value="gn13_acf.html">13</option>
+            <option value="gn14_acf.html">14</option>
+            <option value="gn15_acf.html">15</option>
+            <option value="gn16_acf.html">16</option>
+            <option value="gn17_acf.html">17</option>
+            <option value="gn18_acf.html">18</option>
+            <option value="gn19_acf.html">19</option>
+            <option value="gn20_acf.html">20</option>
+            <option value="gn21_acf.html">21</option>
+            <option value="gn22_acf.html">22</option>
+            <option value="gn23_acf.html">23</option>
+            <option value="gn24_acf.html">24</option>
+            <option value="gn25_acf.html">25</option>
+            <option value="gn26_acf.html">26</option>
+            <option value="gn27_acf.html">27</option>
+            <option value="gn28_acf.html">28</option>
+            <option value="gn29_acf.html">29</option>
+            <option value="gn30_acf.html">30</option>
+            <option value="gn31_acf.html" selected>31</option>
+            <option value="gn32_acf.html">32</option>
+            <option value="gn33_acf.html">33</option>
+            <option value="gn34_acf.html">34</option>
+            <option value="gn35_acf.html">35</option>
+            <option value="gn36_acf.html">36</option>
+            <option value="gn37_acf.html">37</option>
+            <option value="gn38_acf.html">38</option>
+            <option value="gn39_acf.html">39</option>
+            <option value="gn40_acf.html">40</option>
+            <option value="gn41_acf.html">41</option>
+            <option value="gn42_acf.html">42</option>
+            <option value="gn43_acf.html">43</option>
+            <option value="gn44_acf.html">44</option>
+            <option value="gn45_acf.html">45</option>
+            <option value="gn46_acf.html">46</option>
+            <option value="gn47_acf.html">47</option>
+            <option value="gn48_acf.html">48</option>
+            <option value="gn49_acf.html">49</option>
+            <option value="gn50_acf.html">50</option>
+          </select>
+        </div>
+        <br>
+        <p class="tversao">Versão Almeida Corrigida e Fiel - ACF </p>
+
+        <div class="texto">
+          <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
+          <!-- <br> -->
+
+          <h1>Gênesis 31</h1>
+          <hr>
+          <p id="gn">1 ENTÃO ouvia as palavras dos filhos de Labão, que diziam: Jacó tem tomado tudo o que era de nosso
+            pai, e do que era de nosso pai fez ele toda esta glória.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">2 Viu também Jacó o rosto de Labão, e eis que não era para com ele como anteriormente.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">3 E disse o SENHOR a Jacó: Torna-te à terra dos teus pais, e à tua parentela, e eu serei contigo.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">4 Então mandou Jacó chamar a Raquel e a Lia ao campo, para junto do seu rebanho,<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">5 E disse-lhes: Vejo que o rosto de vosso pai não é para comigo como anteriormente; porém o Deus de
+            meu pai tem estado comigo;<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">6 E vós mesmas sabeis que com todo o meu esforço tenho servido a vosso pai;<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">7 Mas vosso pai me enganou e mudou o salário dez vezes; porém Deus não lhe permitiu que me fizesse
+            mal.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">8 Quando ele dizia assim: Os salpicados serão o teu salário; então todos os rebanhos davam
+            salpicados. E quando ele dizia assim: Os listrados serão o teu salário, então todos os rebanhos davam
+            listrados.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">9 Assim Deus tirou o gado de vosso pai, e deu-o a mim.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">10 E sucedeu que, ao tempo em que o rebanho concebia, eu levantei os meus olhos e vi em sonhos, e
+            eis que os bodes, que cobriam as ovelhas, eram listrados, salpicados e malhados.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">11 E disse-me o anjo de Deus em sonhos: Jacó! E eu disse: Eis-me aqui.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">12 E disse ele: Levanta agora os teus olhos e vê todos os bodes que cobrem o rebanho, que são
+            listrados, salpicados e malhados; porque tenho visto tudo o que Labão te fez.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">13 Eu sou o Deus de Betel, onde tens ungido uma coluna, onde me fizeste um voto; levanta-te agora,
+            sai-te desta terra e torna-te à terra da tua parentela.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">14 Então responderam Raquel e Lia e disseram-lhe: Há ainda para nós parte ou herança na casa de
+            nosso pai?<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">15 Não nos considera ele como estranhas? Pois vendeu-nos, e comeu de todo o nosso dinheiro.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">16 Porque toda a riqueza, que Deus tirou de nosso pai, é nossa e de nossos filhos; agora, pois,
+            faze tudo o que Deus te mandou.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">17 Então se levantou Jacó, pondo os seus filhos e as suas mulheres sobre os camelos;<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">18 E levou todo o seu gado, e todos os seus bens, que havia adquirido, o gado que possuía, que
+            alcançara em Padã-Arã, para ir a Isaque, seu pai, à terra de Canaã.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">19 E havendo Labão ido a tosquiar as suas ovelhas, furtou Raquel os ídolos que seu pai tinha.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">20 E Jacó logrou a Labão, o arameu, porque não lhe fez saber que fugia.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">21 E fugiu ele com tudo o que tinha, e levantou-se e passou o rio; e se dirigiu para a montanha de
+            Gileade.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">22 E no terceiro dia foi anunciado a Labão que Jacó tinha fugido.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">23 Então tomou consigo os seus irmãos, e atrás dele seguiu o seu caminho por sete dias; e
+            alcançou-o na montanha de Gileade.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">24 Veio, porém, Deus a Labão, o arameu, em sonhos, de noite, e disse-lhe: Guarda-te, que não fales
+            com Jacó nem bem nem mal.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">25 Alcançou, pois, Labão a Jacó, e armara Jacó a sua tenda naquela montanha; armou também Labão com
+            os seus irmãos a sua, na montanha de Gileade.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">26 Então disse Labão a Jacó: Que fizeste, que me lograste e levaste as minhas filhas como cativas
+            pela espada?<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">27 Por que fugiste ocultamente, e lograste-me, e não me fizeste saber, para que eu te enviasse com
+            alegria, e com cânticos, e com tamboril e com harpa?<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">28 Também não me permitiste beijar os meus filhos e as minhas filhas. Loucamente agiste, agora,
+            fazendo assim.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">29 Poder havia em minha mão para vos fazer mal, mas o Deus de vosso pai me falou ontem à noite,
+            dizendo: Guarda-te, que não fales com Jacó nem bem nem mal.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">30 E agora se querias ir embora, porquanto tinhas saudades de voltar à casa de teu pai, por que
+            furtaste os meus deuses?<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">31 Então respondeu Jacó, e disse a Labão: Porque temia; pois que dizia comigo, se porventura não me
+            arrebatarias as tuas filhas.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">32 Com quem achares os teus deuses, esse não viva; reconhece diante de nossos irmãos o que é teu do
+            que está comigo, e toma-o para ti. Pois Jacó não sabia que Raquel os tinha furtado.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">33 Então entrou Labão na tenda de Jacó, e na tenda de Lia, e na tenda de ambas as servas, e não os
+            achou; e saindo da tenda de Lia, entrou na tenda de Raquel.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">34 Mas tinha tomado Raquel os ídolos e os tinha posto na albarda de um camelo, e assentara-se sobre
+            eles; e apalpou Labão toda a tenda, e não os achou.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">35 E ela disse a seu pai: Não se acenda a ira aos olhos de meu senhor, que não posso levantar-me
+            diante da tua face; porquanto tenho o costume das mulheres. E ele procurou, mas não achou os ídolos.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">36 Então irou-se Jacó e contendeu com Labão; e respondeu Jacó, e disse a Labão: Qual é a minha
+            transgressão? Qual é o meu pecado, que tão furiosamente me tens perseguido?<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">37 Havendo apalpado todos os meus móveis, que achaste de todos os móveis de tua casa? Põe-no aqui
+            diante dos meus irmãos e de teus irmãos; e que julguem entre nós ambos.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">38 Estes vinte anos eu estive contigo; as tuas ovelhas e as tuas cabras nunca abortaram, e não comi
+            os carneiros do teu rebanho.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">39 Não te trouxe eu o despedaçado; eu o pagava; o furtado de dia e o furtado de noite da minha mão
+            o requerias.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">40 Estava eu assim: De dia me consumia o calor, e de noite a geada; e o meu sono fugiu dos meus
+            olhos.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">41 Tenho estado agora vinte anos na tua casa; catorze anos te servi por tuas duas filhas, e seis
+            anos por teu rebanho; mas o meu salário tens mudado dez vezes.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">42 Se o Deus de meu pai, o Deus de Abraão e o temor de Isaque não fora comigo, por certo me
+            despedirias agora vazio. Deus atendeu à minha aflição, e ao trabalho das minhas mãos, e repreendeu-te ontem
+            à noite.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">43 Então respondeu Labão, e disse a Jacó: Estas filhas são minhas filhas, e estes filhos são meus
+            filhos, e este rebanho é o meu rebanho, e tudo o que vês, é meu; e que farei hoje a estas minhas filhas, ou
+            a seus filhos, que deram à luz?<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">44 Agora pois vem, e façamos aliança eu e tu, que seja por testemunho entre mim e ti.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">45 Então tomou Jacó uma pedra, e erigiu-a por coluna.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">46 E disse Jacó a seus irmãos: Ajuntai pedras. E tomaram pedras, e fizeram um montão, e comeram ali
+            sobre aquele montão.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">47 E chamou-o Labão Jegar-Saaduta; porém Jacó chamou-o Galeede.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">48 Então disse Labão: Este montão seja hoje por testemunha entre mim e ti. Por isso se lhe chamou
+            Galeede,<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">49 E Mispá, porquanto disse: Atente o SENHOR entre mim e ti, quando nós estivermos apartados um do
+            outro.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">50 Se afligires as minhas filhas, e se tomares mulheres além das minhas filhas, ninguém está
+            conosco; atenta que Deus é testemunha entre mim e ti.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">51 Disse mais Labão a Jacó: Eis aqui este mesmo montão, e eis aqui essa coluna que levantei entre
+            mim e ti.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">52 Este montão seja testemunha, e esta coluna seja testemunha, que eu não passarei este montão a
+            ti, e que tu não passarás este montão e esta coluna a mim, para mal.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">53 O Deus de Abraão e o Deus de Naor, o Deus de seu pai, julgue entre nós. E jurou Jacó pelo temor
+            de seu pai Isaque.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">54 E ofereceu Jacó um sacrifício na montanha, e convidou seus irmãos, para comer pão; e comeram pão
+            e passaram a noite na montanha.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">55 E levantou-se Labão pela manhã de madrugada, e beijou seus filhos e suas filhas e abençoou-os e
+            partiu; e voltou Labão ao seu lugar.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+
+        </div>
+      </div>
+
+  </main>
+  <aside id="mcap">
+    <h3 id="tcapitulos">CAPÍTULOS:</h3>
+    <a href="../genesis/gn1_acf.html">1</a>
+    <a href="../genesis/gn2_acf.html">2</a>
+    <a href="../genesis/gn3_acf.html">3</a>
+    <a href="../genesis/gn4_acf.html">4</a>
+    <a href="../genesis/gn5_acf.html">5</a>
+    <a href="../genesis/gn6_acf.html">6</a>
+    <a href="../genesis/gn7_acf.html">7</a>
+    <a href="../genesis/gn8_acf.html">8</a>
+    <a href="../genesis/gn9_acf.html">9</a>
+    <a href="../genesis/gn10_acf.html">10</a>
+    <a href="../genesis/gn11_acf.html">11</a>
+    <a href="../genesis/gn12_acf.html">12</a>
+    <a href="../genesis/gn13_acf.html">13</a>
+    <a href="../genesis/gn14_acf.html">14</a>
+    <a href="../genesis/gn15_acf.html">15</a>
+    <a href="../genesis/gn16_acf.html">16</a>
+    <a href="../genesis/gn17_acf.html">17</a>
+    <a href="../genesis/gn18_acf.html">18</a>
+    <a href="../genesis/gn19_acf.html">19</a>
+    <a href="../genesis/gn20_acf.html">20</a>
+    <a href="../genesis/gn21_acf.html">21</a>
+    <a href="../genesis/gn22_acf.html">22</a>
+    <a href="../genesis/gn23_acf.html">23</a>
+    <a href="../genesis/gn24_acf.html">24</a>
+    <a href="../genesis/gn25_acf.html">25</a>
+    <a href="../genesis/gn26_acf.html">26</a>
+    <a href="../genesis/gn27_acf.html">27</a>
+    <a href="../genesis/gn28_acf.html">28</a>
+    <a href="../genesis/gn29_acf.html">29</a>
+    <a href="../genesis/gn30_acf.html">30</a>
+    <a class="sel" href="#">31</a>
+    <a href="../genesis/gn32_acf.html">32</a>
+    <a href="../genesis/gn33_acf.html">33</a>
+    <a href="../genesis/gn34_acf.html">34</a>
+    <a href="../genesis/gn35_acf.html">35</a>
+    <a href="../genesis/gn36_acf.html">36</a>
+    <a href="../genesis/gn37_acf.html">37</a>
+    <a href="../genesis/gn38_acf.html">38</a>
+    <a href="../genesis/gn39_acf.html">39</a>
+    <a href="../genesis/gn40_acf.html">40</a>
+    <a href="../genesis/gn41_acf.html">41</a>
+    <a href="../genesis/gn42_acf.html">42</a>
+    <a href="../genesis/gn43_acf.html">43</a>
+    <a href="../genesis/gn44_acf.html">44</a>
+    <a href="../genesis/gn45_acf.html">45</a>
+    <a href="../genesis/gn46_acf.html">46</a>
+    <a href="../genesis/gn47_acf.html">47</a>
+    <a href="../genesis/gn48_acf.html">48</a>
+    <a href="../genesis/gn49_acf.html">49</a>
+    <a href="../genesis/gn50_acf.html">50</a>
+
+  </aside>
+  <div class="setas">
+    <a href="../genesis/gn30_acf.html"><i class='bx bx-left-arrow'></i></a>
+    <a href="../genesis/gn32_acf.html"><i class='bx bx-right-arrow'></i></a>
+  </div>
+</body>
+<footer id="rodape">
+  &copy; &shy;Biblia de Estudo Online
+</footer>
+
+</html>

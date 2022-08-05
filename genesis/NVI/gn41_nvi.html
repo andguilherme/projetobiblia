@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/estiloprincipal.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/estilo-gn.css" />
+
+  <title>Biblia de Estudo Online</title>
+  <script>
+    function lvr() {
+      var select = document.getElementById('tst');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+    function cpt() {
+      var select = document.getElementById('icap');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <img src="../../img/cruz-a-tinta.png" />
+      <em>Bíblia de Estudo Online</em>
+    </div>
+  </header>
+  <nav>
+    <ul class="versoes">
+      <li><a href="#" title="Nova Versão Internacional">NVI</a></li>
+      <li><a href="../gn41_acf.html" title="Almeida Corrigida e Fiel">ACF</a></li>
+      <li><a href="../NTLH/gn41_ntlh.html" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+    </ul>
+    <ul class="ferramentas">
+      <li><a href="../comentario/gn1-1_cmt.html" title="Comentário Bíblico">COMENTÁRIO</a></li>
+      <li><a href="../interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+      <li><a href="../../construcao.html" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+      <li><a href="../cruzadas/gn1-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+    </ul>
+    <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+    <div class="menu-bar mobile">
+      <ul>
+
+        <li><a href="#">Ferramentas</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../comentario/gn1-1_cmt.html">Comentário</a></li>
+              <li><a href="../interlinear/gn1-1_int.html">Interlinear</a></li>
+              <li><a href="#">Dicionário</a></li>
+              <li><a href="../cruzadas/gn1-1_crz.html">Cruzadas</a>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Versões</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">NVI</a></li>
+              <li><a href="../gn41_acf.html">ACF</a></li>
+              <li><a href="../NTLH/gn41_ntlh.htm">NTLH</a></li>
+            </ul>
+          </div>
+      </ul>
+
+    </div>
+  </nav>
+  <main>
+    <div id="corpo">
+      <div class="breadscrumbs">
+        <a href="../../index.html">Bíblia</a> &shy; > <a href="#">NVI</a>
+        <span style="color: #606060">&shy; > Gênesis &shy;</span>
+      </div>
+      <div id="corpo">
+        <div class="sel_livros">
+          <select name="tst" id="tst" onchange="lvr()">
+            <optgroup label="Antigo Testamento">
+              <option selected value="#">Gênesis</option>
+              <option value="../../exodo/nvi/ex1_nvi.html">Êxodo</option>
+              <option value="../../levítico/nvi/lv1_nvi.html">Levítico</option>
+              <option value="../../numeros/nvi/nm1_nvi.html">Números</option>
+              <option value="../../deuteronomio/nvi/dt1_nvi.html">Deuteronômio</option>
+              <option value="../../josue/nvi/js1_nvi.html">Josué</option>
+              <option value="../../juizes/nvi/jz1_nvi.html">Juízes</option>
+              <option value="../../rute/nvi/rt1_nvi.html">Rute</option>
+              <option value="../../1Samuel/nvi/1sm1_nvi.html">1 Samuel</option>
+              <option value="../../2Samuel/nvi/2sm1_nvi.html">2 Samuel</option>
+              <option value="../../1Reis/nvi/1rs_nvi.html">1 Reis</option>
+              <option value="../../2Reis/nvi/2rs_nvi.html">2 Reis</option>
+              <option value="../../1cronicas/nvi/1cr1_nvi.html">1 Crônicas</option>
+              <option value="../../2cronicas/nvi/2cr1_nvi.html">2 Crônicas</option>
+              <option value="../../esdras/nvi/es1_nvi.html">Esdras</option>
+              <option value="../../neemias/nvi/nm1_nvi.html">Neemias</option>
+              <option value="../../ester/nvi/et1_nvi.html">Ester</option>
+              <option value="../../jo/nvi/jo1_nvi.html">Jó</option>
+              <option value="../../salmos/nvi/sl1_nvi.html">Salmos</option>
+              <option value="../../proverbios/nvi/pv1_nvi.html">Provérbios</option>
+              <option value="../../eclesiastes/nvi/ec1_nvi.html">Eclesiastes</option>
+              <option value="../../cantares/nvi/ct1_nvi.html">Cantares</option>
+              <option value="../../isaias/nvi/is1_nvi.html">Isaías</option>
+              <option value="../../jeremias/nvi/jr1_nvi.html">Jeremias</option>
+              <option value="../../ezequiel/nvi/ez1_nvi.html">Ezequiel</option>
+              <option value="../../daniel/nvi/dn1_nvi.html">Daniel</option>
+              <option value="../../oseias/nvi/os1_nvi.html">Oséias</option>
+              <option value="../../joel/nvi/jl1_nvi.html">Joel</option>
+              <option value="../../amos/nvi/am1_nvi.html">Amós</option>
+              <option value="../../obadias/nvi/ob1_nvi.html">Obadias</option>
+              <option value="../../jonas/nvi/jn1_nvi.html">Jonas</option>
+              <option value="../../miqueias/nvi/mq1_nvi.html">Miquéias</option>
+              <option value="../../naum/nvi/nm1_nvi.html">Naum</option>
+              <option value="../../habacuque/nvi/hb1_nvi.html">Habacuque</option>
+              <option value="../../sofonias/nvi/sf1_nvi.html">Sofonias</option>
+              <option value="../../ageu/nvi/ag1_nvi.html">Ageu</option>
+              <option value="../../zacarias/nvi/zc1_nvi.html">Zacarias</option>
+              <option value="../../malaquias/nvi/ml1_nvi.html">Malaquias</option>
+            </optgroup>
+            <optgroup label="Novo Testamento">
+              <option value="../../Mateus/nvi/mt1_nvi.html">Mateus</option>
+            <option value="../../Marcos/nvi/mc1_nvi.html">Marcos</option>
+            <option value="../../Lucas/nvi/lc1_nvi.html">Lucas</option>
+            <option value="../../João/nvi/jo1_nvi.html">João</option>
+            <option value="../../Atos/nvi/at1_nvi.html">Atos</option>
+            <option value="../../Romanos/nvi/rm1_nvi.html">Romanos</option>
+            <option value="../../1Coríntios/nvi/1co1_nvi.html">1 Coríntios</option>
+            <option value="../../2Coríntios/nvi/2co1_nvi.html">2 Coríntios</option>
+            <option value="../../Gálatas/nvi/gl1_nvi.html">Gálatas</option>
+            <option value="../../Efésios/nvi/ef1_nvi.html">Efésios</option>
+            <option value="../../Filipenses/nvi/fp1_nvi.html">Filipenses</option>
+            <option value="../../Colossenses/nvi/cl1_nvi.html">Colossenses</option>
+            <option value="../../1Tessalonissences/nvi/1ts1_nvi.html">1 Tessalonissences</option>
+            <option value="../../1Tessalonissences/nvi/2ts1_nvi.html">1 Tessalonissences</option>
+            <option value="../../1Timóteo/nvi/1tm1_nvi.html">1 Timóteo</option>
+            <option value="../../2Timóteo/nvi/2tm1_nvi.html">2 Timóteo</option>
+            <option value="../../Tito/nvi/tt1_nvi.html">Tito</option>
+            <option value="../../Filemom/nvi/fl1_nvi.html">Filemom</option>
+            <option value="../../Hebreus/nvi/hb1_nvi.html">Hebreus</option>
+            <option value="../../Tiago/nvi/tg1_nvi.html">Tiago</option>
+            <option value="../../1Pedro/nvi/1pe1_nvi.html">1 Pedro</option>
+            <option value="../../2Pedro/nvi/2pe1_nvi.html">2 Pedro</option>
+            <option value="../../1João/nvi/1jo1_nvi.html">1 João</option>
+            <option value="../../2João/nvi/2jo1_nvi.html">2 João</option>
+            <option value="../../3João/nvi/3jo1_nvi.html">3 João</option>
+            <option value="../../Judas/nvi/jd1_nvi.html">Judas</option>
+            <option value="../../Apocalipse/nvi/ap1_nvi.html">Apocalipse</option>
+            </optgroup>
+          </select>
+          <select name="vers" id="icap" onchange="cpt()">
+            <option value="gn1_nvi.html">1</option>
+            <option value="gn2_nvi.html">2</option>
+            <option value="gn3_nvi.html">3</option>
+            <option value="gn4_nvi.html">4</option>
+            <option value="gn5_nvi.html">5</option>
+            <option value="gn6_nvi.html">6</option>
+            <option value="gn7_nvi.html">7</option>
+            <option value="gn8_nvi.html">8</option>
+            <option value="gn9_nvi.html">9</option>
+            <option value="gn10_nvi.html">10</option>
+            <option value="gn11_nvi.html">11</option>
+            <option value="gn12_nvi.html">12</option>
+            <option value="gn13_nvi.html">13</option>
+            <option value="gn14_nvi.html">14</option>
+            <option value="gn15_nvi.html">15</option>
+            <option value="gn16_nvi.html">16</option>
+            <option value="gn17_nvi.html">17</option>
+            <option value="gn18_nvi.html">18</option>
+            <option value="gn19_nvi.html">19</option>
+            <option value="gn20_nvi.html">20</option>
+            <option value="gn21_nvi.html">21</option>
+            <option value="gn22_nvi.html">22</option>
+            <option value="gn23_nvi.html">23</option>
+            <option value="gn24_nvi.html">24</option>
+            <option value="gn25_nvi.html">25</option>
+            <option value="gn26_nvi.html">26</option>
+            <option value="gn27_nvi.html">27</option>
+            <option value="gn28_nvi.html">28</option>
+            <option value="gn29_nvi.html">29</option>
+            <option value="gn30_nvi.html">30</option>
+            <option value="gn31_nvi.html">31</option>
+            <option value="gn32_nvi.html">32</option>
+            <option value="gn33_nvi.html">33</option>
+            <option value="gn34_nvi.html">34</option>
+            <option value="gn35_nvi.html">35</option>
+            <option value="gn36_nvi.html">36</option>
+            <option value="gn37_nvi.html">37</option>
+            <option value="gn38_nvi.html">38</option>
+            <option value="gn39_nvi.html">39</option>
+            <option value="gn40_nvi.html">40</option>
+            <option value="gn41_nvi.html" selected>41</option>
+            <option value="gn42_nvi.html">42</option>
+            <option value="gn43_nvi.html">43</option>
+            <option value="gn44_nvi.html">44</option>
+            <option value="gn45_nvi.html">45</option>
+            <option value="gn46_nvi.html">46</option>
+            <option value="gn47_nvi.html">47</option>
+            <option value="gn48_nvi.html">48</option>
+            <option value="gn49_nvi.html">49</option>
+            <option value="gn50_nvi.html">50</option>
+          </select>
+        </div>
+        <br>
+        <p class="tversao">Nova Versão Internacional - NVI</p>
+
+        <div class="texto">
+          <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
+          <!-- <br> -->
+
+          <h1>Gênesis 41</h1>
+          <hr>
+
+
+          <p id="gn">1 Ao final de dois anos, o faraó teve um sonho: Ele estava em pé junto ao rio Nilo,<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">2 quando saíram do rio sete vacas belas e gordas, que começaram a pastar entre os juncos.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">3 Depois saíram do rio mais sete vacas, feias e magras, que foram para junto das outras, à beira do
+            Nilo.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">4 Então as vacas feias e magras comeram as sete vacas belas e gordas. Nisso o faraó acordou.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">5 Tornou a adormecer e teve outro sonho: Sete espigas de trigo, graúdas e boas, cresciam no mesmo
+            pé.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">6 Depois brotaram outras sete espigas, mirradas e ressequidas pelo vento leste.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">7 As espigas mirradas engoliram as sete espigas graúdas e cheias. Então o faraó acordou; era um
+            sonho.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">8 Pela manhã, perturbado, mandou chamar todos os magos e sábios do Egito e lhes contou os sonhos,
+            mas ninguém foi capaz de interpretá-los.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">9 Então o chefe dos copeiros disse ao faraó: "Hoje me lembro de minhas faltas.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">10 Certa vez o faraó ficou irado com os seus dois servos e mandou prender-me junto com o chefe dos
+            padeiros, na casa do capitão da guarda.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">11 Certa noite cada um de nós teve um sonho, e cada sonho tinha uma interpretação.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">12 Pois bem, havia lá conosco um jovem hebreu, servo do capitão da guarda. Contamos a ele os nossos
+            sonhos, e ele os interpretou, dando a cada um de nós a interpretação do seu próprio sonho.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">13 E tudo aconteceu conforme ele nos dissera: eu fui restaurado à minha posição e o outro foi
+            enforcado".<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">14 O faraó mandou chamar José, que foi trazido depressa do calabouço. Depois de se barbear e trocar
+            de roupa, apresentou-se ao faraó.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">15 O faraó disse a José: "Tive um sonho que ninguém consegue interpretar. Mas ouvi falar que você,
+            ao ouvir um sonho, é capaz de interpretá-lo".<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">16 Respondeu-lhe José: "Isso não depende de mim, mas Deus dará ao faraó uma resposta favorável".<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">17 Então o faraó contou o sonho a José: "Sonhei que estava de pé, à beira do Nilo,<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">18 quando saíram do rio sete vacas, belas e gordas, que começaram a pastar entre os juncos.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">19 Depois saíram outras sete, raquíticas, muito feias e magras. Nunca vi vacas tão feias em toda a
+            terra do Egito.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">20 As vacas magras e feias comeram as sete vacas gordas que tinham aparecido primeiro.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">21 Mesmo depois de havê-las comido, não parecia que o tivessem feito, pois continuavam tão magras
+            como antes. Então acordei.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">22 "Depois tive outro sonho: Vi sete espigas de cereal, cheias e boas, que cresciam num mesmo pé.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">23 Depois delas, brotaram outras sete, murchas e mirradas, ressequidas pelo vento leste.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">24 As espigas magras engoliram as sete espigas boas. Contei isso aos magos, mas ninguém foi capaz
+            de explicá-lo".<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">25 "O faraó teve um único sonho", disse-lhe José. "Deus revelou ao faraó o que ele está para
+            fazer.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">26 As sete vacas boas são sete anos, e as sete espigas boas são também sete anos; trata-se de um
+            único sonho.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">27 As sete vacas magras e feias que surgiram depois das outras, e as sete espigas mirradas,
+            queimadas pelo vento leste, são sete anos. Serão sete anos de fome.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">28 "É exatamente como eu disse ao faraó: Deus mostrou ao faraó aquilo que ele vai fazer.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">29 Sete anos de muita fartura estão para vir sobre toda a terra do Egito,<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">30 mas depois virão sete anos de fome. Então todo o tempo de fartura será esquecido, pois a fome
+            arruinará a terra.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">31 A fome que virá depois será tão rigorosa que o tempo de fartura não será mais lembrado na
+            terra.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">32 O sonho veio ao faraó duas vezes porque a questão já foi decidida por Deus, que se apressa em
+            realizá-la.<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">33 "Procure agora o faraó um homem criterioso e sábio e coloque-o no comando da terra do Egito.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">34 O faraó também deve estabelecer supervisores para recolher um quinto da colheita do Egito
+            durante os sete anos de fartura.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">35 Eles deverão recolher o que puderem nos anos bons que virão e fazer estoques de trigo que, sob o
+            controle do faraó, serão armazenados nas cidades.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">36 Esse estoque servirá de reserva para os sete anos de fome que virão sobre o Egito, para que a
+            terra não seja arrasada pela fome. "<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">37 O plano pareceu bom ao faraó e a todos os seus conselheiros.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">38 Por isso o faraó lhes perguntou: "Será que vamos achar alguém como este homem, em quem está o
+            espírito divino? "<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">39 Disse, pois, o faraó a José: "Uma vez que Deus lhe revelou todas essas coisas, não há ninguém
+            tão criterioso e sábio como você.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">40 Você terá o comando de meu palácio, e todo o meu povo se sujeitará às suas ordens. Somente em
+            relação ao trono serei maior que você".<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">41 E o faraó prosseguiu: "Entrego a você agora o comando de toda a terra do Egito".<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">42 Em seguida o faraó tirou do dedo o seu anel de selar e o colocou no dedo de José. Mandou-o
+            vestir linho fino e colocou uma corrente de ouro em seu pescoço.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">43 Também o fez subir em sua segunda carruagem real, e à frente os arautos iam gritando: "Abram
+            caminho! " Assim José foi colocado no comando de toda a terra do Egito.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">44 Disse ainda o faraó a José: "Eu sou o faraó, mas sem a sua palavra ninguém poderá levantar a mão
+            nem o pé em todo o Egito".<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">45 O faraó deu a José o nome de Zafenate-Panéia e lhe deu por mulher Azenate, filha de Potífera,
+            sacerdote de Om. Depois José foi inspecionar toda a terra do Egito.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">46 José tinha trinta anos de idade quando começou a servir ao faraó, rei do Egito. Ele se ausentou
+            da presença do faraó e foi percorrer todo o Egito.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">47 Durante os sete anos de fartura a terra teve grande produção.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">48 José recolheu todo o excedente dos sete anos de fartura no Egito e o armazenou nas cidades. Em
+            cada cidade ele armazenava o trigo colhido nas lavouras das redondezas.<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">49 Assim José estocou muito trigo, como a areia do mar. Tal era a quantidade que ele parou de
+            anotar, porque ia além de toda medida.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">50 Antes dos anos de fome, Azenate, filha de Potífera, sacerdote de Om, deu a José dois filhos.<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">51 Ao primeiro, José deu o nome de Manassés, dizendo: "Deus me fez esquecer todo o meu sofrimento e
+            toda a casa de meu pai".<a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a
+              id="mr" href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">52 Ao segundo filho chamou Efraim, dizendo: "Deus me fez prosperar na terra onde tenho sofrido".<a
+              id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">53 Assim chegaram ao fim os sete anos de fartura no Egito,<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">54 e começaram os sete anos de fome, como José tinha predito. Houve fome em todas as terras, mas em
+            todo o Egito havia alimento.<a id="mr" href="#" title="Comentário Bíblico"><i
+                class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">55 Quando todo o Egito começou a sofrer com a fome, o povo clamou ao faraó por comida, e este
+            respondeu a todos os egípcios: "Dirijam-se a José e façam o que ele disser".<a id="mr" href="#"
+              title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#" title="Interlinear"><i
+                class="fas fa-grip-lines"></i></a><a id="mr" href="#" title="Referências cruzadas"><i
+                class="fas fa-times"></i></a></p>
+          <p id="gn">56 Quando a fome já se havia espalhado por toda a terra, José mandou abrir os locais de
+            armazenamento e começou a vender trigo aos egípcios, pois a fome se agravava em todo o Egito.<a id="mr"
+              href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr" href="#"
+              title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+          <p id="gn">57 E de toda a terra vinha gente ao Egito para comprar trigo de José, porquanto a fome se agravava
+            em toda parte. <a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+              href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+              title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+        </div>
+      </div>
+
+  </main>
+  <aside id="mcap">
+    <h3 id="tcapitulos">CAPÍTULOS:</h3>
+    <a href="gn1_nvi.html">1</a>
+    <a href="gn2_nvi.html">2</a>
+    <a href="gn3_nvi.html">3</a>
+    <a href="gn4_nvi.html">4</a>
+    <a href="gn5_nvi.html">5</a>
+    <a href="gn6_nvi.html">6</a>
+    <a href="gn7_nvi.html">7</a>
+    <a href="gn8_nvi.html">8</a>
+    <a href="gn9_nvi.html">9</a>
+    <a href="gn10_nvi.html">10</a>
+    <a href="gn11_nvi.html">11</a>
+    <a href="gn12_nvi.html">12</a>
+    <a href="gn13_nvi.html">13</a>
+    <a href="gn14_nvi.html">14</a>
+    <a href="gn15_nvi.html">15</a>
+    <a href="gn16_nvi.html">16</a>
+    <a href="gn17_nvi.html">17</a>
+    <a href="gn18_nvi.html">18</a>
+    <a href="gn19_nvi.html">19</a>
+    <a href="gn20_nvi.html">20</a>
+    <a href="gn21_nvi.html">21</a>
+    <a href="gn22_nvi.html">22</a>
+    <a href="gn23_nvi.html">23</a>
+    <a href="gn24_nvi.html">24</a>
+    <a href="gn25_nvi.html">25</a>
+    <a href="gn26_nvi.html">26</a>
+    <a href="gn27_nvi.html">27</a>
+    <a href="gn28_nvi.html">28</a>
+    <a href="gn29_nvi.html">29</a>
+    <a href="gn30_nvi.html">30</a>
+    <a href="gn31_nvi.html">31</a>
+    <a href="gn32_nvi.html">32</a>
+    <a href="gn33_nvi.html">33</a>
+    <a href="gn34_nvi.html">34</a>
+    <a href="gn35_nvi.html">35</a>
+    <a href="gn36_nvi.html">36</a>
+    <a href="gn37_nvi.html">37</a>
+    <a href="gn38_nvi.html">38</a>
+    <a href="gn39_nvi.html">39</a>
+    <a href="gn40_nvi.html">40</a>
+    <a class="sel" href="#">41</a>
+    <a href="gn42_nvi.html">42</a>
+    <a href="gn43_nvi.html">43</a>
+    <a href="gn44_nvi.html">44</a>
+    <a href="gn45_nvi.html">45</a>
+    <a href="gn46_nvi.html">46</a>
+    <a href="gn47_nvi.html">47</a>
+    <a href="gn48_nvi.html">48</a>
+    <a href="gn49_nvi.html">49</a>
+    <a href="gn50_nvi.html">50</a>
+  </aside>
+  <div class="setas">
+    <a href="gn40_nvi.html"><i class='bx bx-left-arrow'></i></a>
+    <a href="gn42_nvi.html"><i class='bx bx-right-arrow'></i></a>
+  </div>
+</body>
+<footer id="rodape">
+  &copy; &shy;Biblia de Estudo Online
+</footer>
+
+</html>

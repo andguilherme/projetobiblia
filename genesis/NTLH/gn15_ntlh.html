@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/estiloprincipal.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/estilo-gn.css" />
+
+  <title>Biblia de Estudo Online</title>
+  <script>
+    function lvr() {
+      var select = document.getElementById('tst');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+    function cpt() {
+      var select = document.getElementById('icap');
+      var b = select.options[select.selectedIndex].value;
+      window.location.href = (b);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <img src="../../img/cruz-a-tinta.png" />
+      <em>Bíblia de Estudo Online</em>
+    </div>
+  </header>
+  <nav>
+    <ul class="versoes">
+      <li><a href="../NVI/gn15_nvi.html" title="Nova Versão Internacional">NVI</a></li>
+      <li><a href="../gn15_acf.html" title="Almeida Corrigida e Fiel">ACF</a></li>
+      <li><a href="#" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+    </ul>
+    <ul class="ferramentas">
+      <li><a href="../comentario/gn1-1_cmt.html" title="Comentário Bíblico">COMENTÁRIO</a></li>
+      <li><a href="../interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+      <li><a href="#" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+      <li><a href="../cruzadas/gn15-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+    </ul>
+    <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+    <div class="menu-bar mobile">
+      <ul>
+
+        <li><a href="#">Ferramentas</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../comentario/gn1-1_cmt.html">Comentário</a></li>
+              <li><a href="../interlinear/gn1-1_int.html">Interlinear</a></li>
+              <li><a href="#">Dicionário</a></li>
+              <li><a href="../cruzadas/gn15-1_crz.html">Cruzadas</a>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Versões</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="../NVI/gn15_nvi.html">NVI</a></li>
+              <li><a href="../gn15_acf.html">ACF</a></li>
+              <li><a href="#">NTLH</a></li>
+            </ul>
+          </div>
+      </ul>
+
+    </div>
+  </nav>
+  <main>
+    <div class="breadscrumbs">
+      <a href="../index.html">Bíblia</a> &shy; > <a href="#">ACF</a>
+      <span style="color: #606060">&shy; > Gênesis &shy;</span>
+    </div>
+
+    <div id="corpo">
+      <div class="sel_livros">
+        <select name="tst" id="tst" onchange="lvr()">
+          <optgroup label="Antigo Testamento">
+            <option selected value="#">Gênesis</option>
+            <option value="../../exodo/ntlh/ex1_ntlh.html">Êxodo</option>
+            <option value="../../levítico/ntlh/lv1_ntlh.html">Levítico</option>
+            <option value="../../numeros/ntlh/nm1_ntlh.html">Números</option>
+            <option value="../../deuteronomio/ntlh/dt1_ntlh.html">Deuteronômio</option>
+            <option value="../../josue/ntlh/js1_ntlh.html">Josué</option>
+            <option value="../../juizes/ntlh/jz1_ntlh.html">Juízes</option>
+            <option value="../../rute/ntlh/rt1_ntlh.html">Rute</option>
+            <option value="../../1Samuel/ntlh/1sm1_ntlh.html">1 Samuel</option>
+            <option value="../../2Samuel/ntlh/2sm1_ntlh.html">2 Samuel</option>
+            <option value="../../1Reis/ntlh/1rs_ntlh.html">1 Reis</option>
+            <option value="../../2Reis/ntlh/2rs_ntlh.html">2 Reis</option>
+            <option value="../../1cronicas/ntlh/1cr1_ntlh.html">1 Crônicas</option>
+            <option value="../../2cronicas/ntlh/2cr1_ntlh.html">2 Crônicas</option>
+            <option value="../../esdras/ntlh/es1_ntlh.html">Esdras</option>
+            <option value="../../neemias/ntlh/nm1_ntlh.html">Neemias</option>
+            <option value="../../ester/ntlh/et1_ntlh.html">Ester</option>
+            <option value="../../jo/ntlh/jo1_ntlh.html">Jó</option>
+            <option value="../../salmos/ntlh/sl1_ntlh.html">Salmos</option>
+            <option value="../../proverbios/ntlh/pv1_ntlh.html">Provérbios</option>
+            <option value="../../eclesiastes/ntlh/ec1_ntlh.html">Eclesiastes</option>
+            <option value="../../cantares/ntlh/ct1_ntlh.html">Cantares</option>
+            <option value="../../isaias/ntlh/is1_ntlh.html">Isaías</option>
+            <option value="../../jeremias/ntlh/jr1_ntlh.html">Jeremias</option>
+            <option value="../../ezequiel/ntlh/ez1_ntlh.html">Ezequiel</option>
+            <option value="../../daniel/ntlh/dn1_ntlh.html">Daniel</option>
+            <option value="../../oseias/ntlh/os1_ntlh.html">Oséias</option>
+            <option value="../../joel/ntlh/jl1_ntlh.html">Joel</option>
+            <option value="../../amos/ntlh/am1_ntlh.html">Amós</option>
+            <option value="../../obadias/ntlh/ob1_ntlh.html">Obadias</option>
+            <option value="../../jonas/ntlh/jn1_ntlh.html">Jonas</option>
+            <option value="../../miqueias/ntlh/mq1_ntlh.html">Miquéias</option>
+            <option value="../../naum/ntlh/nm1_ntlh.html">Naum</option>
+            <option value="../../habacuque/ntlh/hb1_ntlh.html">Habacuque</option>
+            <option value="../../sofonias/ntlh/sf1_ntlh.html">Sofonias</option>
+            <option value="../../ageu/ntlh/ag1_ntlh.html">Ageu</option>
+            <option value="../../zacarias/ntlh/zc1_ntlh.html">Zacarias</option>
+            <option value="../../malaquias/ntlh/ml1_ntlh.html">Malaquias</option>
+          </optgroup>
+          <optgroup label="Novo Testamento">
+            <option value="../../Mateus/ntlh/mt1_ntlh.html">Mateus</option>
+            <option value="../../Marcos/ntlh/mc1_ntlh.html">Marcos</option>
+            <option value="../../Lucas/ntlh/lc1_ntlh.html">Lucas</option>
+            <option value="../../João/ntlh/jo1_ntlh.html">João</option>
+            <option value="../../Atos/ntlh/at1_ntlh.html">Atos</option>
+            <option value="../../Romanos/ntlh/rm1_ntlh.html">Romanos</option>
+            <option value="../../1Coríntios/ntlh/1co1_ntlh.html">1 Coríntios</option>
+            <option value="../../2Coríntios/ntlh/2co1_ntlh.html">2 Coríntios</option>
+            <option value="../../Gálatas/ntlh/gl1_ntlh.html">Gálatas</option>
+            <option value="../../Efésios/ntlh/ef1_ntlh.html">Efésios</option>
+            <option value="../../Filipenses/ntlh/fp1_ntlh.html">Filipenses</option>
+            <option value="../../Colossenses/ntlh/cl1_ntlh.html">Colossenses</option>
+            <option value="../../1Tessalonissences/ntlh/1ts1_ntlh.html">1 Tessalonissences</option>
+            <option value="../../1Tessalonissences/ntlh/2ts1_ntlh.html">1 Tessalonissences</option>
+            <option value="../../1Timóteo/ntlh/1tm1_ntlh.html">1 Timóteo</option>
+            <option value="../../2Timóteo/ntlh/2tm1_ntlh.html">2 Timóteo</option>
+            <option value="../../Tito/ntlh/tt1_ntlh.html">Tito</option>
+            <option value="../../Filemom/ntlh/fl1_ntlh.html">Filemom</option>
+            <option value="../../Hebreus/ntlh/hb1_ntlh.html">Hebreus</option>
+            <option value="../../Tiago/ntlh/tg1_ntlh.html">Tiago</option>
+            <option value="../../1Pedro/ntlh/1pe1_ntlh.html">1 Pedro</option>
+            <option value="../../2Pedro/ntlh/2pe1_ntlh.html">2 Pedro</option>
+            <option value="../../1João/ntlh/1jo1_ntlh.html">1 João</option>
+            <option value="../../2João/ntlh/2jo1_ntlh.html">2 João</option>
+            <option value="../../3João/ntlh/3jo1_ntlh.html">3 João</option>
+            <option value="../../Judas/ntlh/jd1_ntlh.html">Judas</option>
+            <option value="../../Apocalipse/ntlh/ap1_ntlh.html">Apocalipse</option>
+          </optgroup>
+        </select>
+        <select name="vers" id="icap" onchange="cpt()">
+          <option value="gn1_ntlh.html">1</option>
+          <option value="gn2_ntlh.html">2</option>
+          <option value="gn3_ntlh.html">3</option>
+          <option value="gn4_ntlh.html">4</option>
+          <option value="gn5_ntlh.html">5</option>
+          <option value="gn6_ntlh.html">6</option>
+          <option value="gn7_ntlh.html">7</option>
+          <option value="gn8_ntlh.html">8</option>
+          <option value="gn9_ntlh.html">9</option>
+          <option value="gn10_ntlh.html">10</option>
+          <option value="gn11_ntlh.html">11</option>
+          <option value="gn12_ntlh.html">12</option>
+          <option value="gn13_ntlh.html">13</option>
+          <option value="gn14_ntlh.html">14</option>
+          <option value="gn15_ntlh.html">15</option>
+          <option value="gn16_ntlh.html">16</option>
+          <option value="gn17_ntlh.html">17</option>
+          <option value="gn18_ntlh.html">18</option>
+          <option value="gn19_ntlh.html">19</option>
+          <option value="gn20_ntlh.html">20</option>
+          <option value="gn21_ntlh.html">21</option>
+          <option value="gn22_ntlh.html">22</option>
+          <option value="gn23_ntlh.html">23</option>
+          <option value="gn24_ntlh.html">24</option>
+          <option value="gn25_ntlh.html">25</option>
+          <option value="gn26_ntlh.html">26</option>
+          <option value="gn27_ntlh.html">27</option>
+          <option value="gn28_ntlh.html">28</option>
+          <option value="gn29_ntlh.html">29</option>
+          <option value="gn30_ntlh.html">30</option>
+          <option value="gn31_ntlh.html">31</option>
+          <option value="gn32_ntlh.html">32</option>
+          <option value="gn33_ntlh.html">33</option>
+          <option value="gn34_ntlh.html">34</option>
+          <option value="gn35_ntlh.html">35</option>
+          <option value="gn36_ntlh.html">36</option>
+          <option value="gn37_ntlh.html">37</option>
+          <option value="gn38_ntlh.html">38</option>
+          <option value="gn39_ntlh.html">39</option>
+          <option value="gn40_ntlh.html">40</option>
+          <option value="gn41_ntlh.html">41</option>
+          <option value="gn42_ntlh.html">42</option>
+          <option value="gn43_ntlh.html">43</option>
+          <option value="gn44_ntlh.html">44</option>
+          <option value="gn45_ntlh.html" selected>45</option>
+          <option value="gn46_ntlh.html">46</option>
+          <option value="gn47_ntlh.html">47</option>
+          <option value="gn48_ntlh.html">48</option>
+          <option value="gn49_ntlh.html">49</option>
+          <option value="gn50_ntlh.html">50</option>
+        </select>
+      </div>
+      <br>
+      <p class="tversao">Nova Tradução da Linguagem de Hoje - NTLH</p>
+
+      <div class="texto">
+        <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
+        <!-- <br> -->
+
+        <h1>Gênesis 15</h1>
+        <hr>
+        <p id="gn"> <a id="mr" href="#" title="Comentário Bíblico"><i class="far fa-comments"></i></a><a id="mr"
+            href="#" title="Interlinear"><i class="fas fa-grip-lines"></i></a><a id="mr" href="#"
+            title="Referências cruzadas"><i class="fas fa-times"></i></a></p>
+
+
+      </div>
+    </div>
+
+  </main>
+  <aside id="mcap">
+    <h3 id="tcapitulos">CAPÍTULOS:</h3>
+    <a href="gn1_ntlh.html">1</a>
+    <a href="gn2_ntlh.html">2</a>
+    <a href="gn3_ntlh.html">3</a>
+    <a href="gn4_ntlh.html">4</a>
+    <a href="gn5_ntlh.html">5</a>
+    <a href="gn6_ntlh.html">6</a>
+    <a href="gn7_ntlh.html">7</a>
+    <a href="gn8_ntlh.html">8</a>
+    <a href="gn9_ntlh.html">9</a>
+    <a href="gn10_ntlh.html">10</a>
+    <a href="gn11_ntlh.html">11</a>
+    <a href="gn12_ntlh.html">12</a>
+    <a href="gn13_ntlh.html">13</a>
+    <a href="gn14_ntlh.html">14</a>
+    <a class="sel" href="#">15</a>
+    <a href="gn16_ntlh.html">16</a>
+    <a href="gn17_ntlh.html">17</a>
+    <a href="gn18_ntlh.html">18</a>
+    <a href="gn19_ntlh.html">19</a>
+    <a href="gn20_ntlh.html">20</a>
+    <a href="gn21_ntlh.html">21</a>
+    <a href="gn22_ntlh.html">22</a>
+    <a href="gn23_ntlh.html">23</a>
+    <a href="gn24_ntlh.html">24</a>
+    <a href="gn25_ntlh.html">25</a>
+    <a href="gn26_ntlh.html">26</a>
+    <a href="gn27_ntlh.html">27</a>
+    <a href="gn28_ntlh.html">28</a>
+    <a href="gn29_ntlh.html">29</a>
+    <a href="gn30_ntlh.html">30</a>
+    <a href="gn31_ntlh.html">31</a>
+    <a href="gn32_ntlh.html">32</a>
+    <a href="gn33_ntlh.html">33</a>
+    <a href="gn34_ntlh.html">34</a>
+    <a href="gn35_ntlh.html">35</a>
+    <a href="gn36_ntlh.html">36</a>
+    <a href="gn37_ntlh.html">37</a>
+    <a href="gn38_ntlh.html">38</a>
+    <a href="gn39_ntlh.html">39</a>
+    <a href="gn40_ntlh.html">40</a>
+    <a href="gn41_ntlh.html">41</a>
+    <a href="gn42_ntlh.html">42</a>
+    <a href="gn43_ntlh.html">43</a>
+    <a href="gn44_ntlh.html">44</a>
+    <a href="gn45_ntlh.html">45</a>
+    <a href="gn46_ntlh.html">46</a>
+    <a href="gn47_ntlh.html">47</a>
+    <a href="gn48_ntlh.html">48</a>
+    <a href="gn49_ntlh.html">49</a>
+    <a href="gn50_ntlh.html">50</a>
+  </aside>
+  <div class="setas">
+    <a href="gn14_ntlh.html"><i class='bx bx-left-arrow'></i></a>
+    <a href="gn16_ntlh.html"><i class='bx bx-right-arrow'></i></a>
+  </div>
+</body>
+<footer id="rodape">
+  &copy; &shy;Biblia de Estudo Online
+</footer>
+
+</html>
