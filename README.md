@@ -1,2 +1,2 @@
 # projetobiblia
-Projeto de Biblia online que desenvolvi com html, php, javascript e Mysql.
+Projeto de Biblia online que estou desenvolvendo com html, php, javascript e Mysql.
