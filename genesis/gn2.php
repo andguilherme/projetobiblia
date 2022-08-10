@@ -71,6 +71,7 @@
                         <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
                         <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
                          <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                         <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
                         </ul>
                     </div>
                 <!-- <li><input type="search" name="pesquisa" id="busca-mobile" placeholder="Busca na Biblia" onsearch="minhabusca()" style="display: none" /></li> -->
@@ -210,6 +211,7 @@
                     <option value="1" <?php if ($vers == '1') echo "selected=\"selected\""; ?>>Almeida Revista e Atualizada - ARA</option>
                     <option value="5" <?php if ($vers == '5') echo "selected=\"selected\""; ?>>Nova Traducao da Linguagem de Hoje - NTLH</option>
                     <option value="6" <?php if ($vers == '6') echo "selected=\"selected\""; ?>>Nova Versao Internacional - NVI</option>
+                    <option value="9" <?php if ($vers == '9') echo "selected=\"selected\""; ?>>Almeida - Texto Recebido</option>
                 </select>
                 <!-- <input type="submit" value="Selecionar" style="width: 90px; "> -->
             </form>
