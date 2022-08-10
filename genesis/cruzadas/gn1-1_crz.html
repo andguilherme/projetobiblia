@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -526,4 +527,534 @@
 </footer>
 
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/estiloprincipal.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/estilo-gn.css">
+
+    <title>Biblia de Estudo Online</title>
+    <script>
+        function lvr() {
+            var select = document.getElementById('tst');
+            var b = select.options[select.selectedIndex].value;
+            window.location.href = (b);
+        }
+        function cpt() {
+            
+            var select = document.getElementById('icap');
+            var b = select.options[select.selectedIndex].value;
+            window.location.href = (b);
+        }
+        function vrs() {
+            
+            var select = document.getElementById('ivers');
+            var b = select.options[select.selectedIndex].value;
+            window.location.href = (b);
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="../../img/cruz-a-tinta.png" />
+            <em>Bíblia de Estudo Online</em>
+        </div>
+    </header>
+    <nav>
+        <ul class="versoes">
+            <li><a href="../NVI/gn1_nvi.html" Nova Versão Internacional">NVI</a></li>
+            <li><a href="../gn1_acf.html" title="Almeida Corrigida e Fiel">ACF</a></li>
+            <li><a href="" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+
+        </ul>
+        <ul class="ferramentas">
+            <li><a href="" title="Comentário Bíblico">COMENTÁRIO</a></li>
+            <li><a href="" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+            <li><a href="construcao.html" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+            <li><a href="#" title="Referências Cruzadas">CRUZADAS</a></li>
+        </ul>
+
+        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+        <div class="menu-bar mobile">
+            <ul>
+
+                <li><a href="#">Ferramentas</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Comentário</a></li>
+                            <li><a href="#">Interlinear</a></li>
+                            <li><a href="#">Dicionário</a></li>
+                            <li><a href="gn1-1_crz.html">Cruzadas</a>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Versões</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="../NVI/gn1_nvi.html">NVI</a></li>
+                            <li><a href="../gn1_acf.html">ACF</a></li>
+                            <li><a href="#">NTLH</a></li>
+                        </ul>
+                    </div>
+            </ul>
+
+        </div>
+    </nav>
+    <main id="m-crz">
+        <div class="breadscrumbs">
+            <a href="../../index.html">Bíblia</a> &shy; > <a href="gn1-1_crz.html">Cruzadas</a>
+            <span style="color: #606060">&shy; > Gênesis &shy;</span>
+        </div>
+
+        <div id="corpo">
+            <div class="sel_livros">
+                <select name="tst" id="tst" onchange="lvr()">
+                    <optgroup label="Antigo Testamento">
+                        <option value="1">Gênesis</option>
+                        <option value="2">Êxodo</option>
+                        <option value="">Levítico</option>
+                        <option value="">Números</option>
+                        <option value="">Deuteronômio</option>
+                        <option value="">Josué</option>
+                        <option value="">Juízes</option>
+                        <option value="">Rute</option>
+                        <option value="">1 Samuel</option>
+                        <option value="">2 Samuel</option>
+                        <option value="">1 Reis</option>
+                        <option value="">2 Reis</option>
+                        <option value="">1 Crônicas</option>
+                        <option value="">2 Crônicas</option>
+                        <option value="">Esdras</option>
+                        <option value="">Neemias</option>
+                        <option value="">Ester</option>
+                        <option value="">Jó</option>
+                        <option value="">Salmos</option>
+                        <option value="">Provérbios</option>
+                        <option value="">Eclesiastes</option>
+                        <option value="">Cantares</option>
+                        <option value="">Isaías</option>
+                        <option value="">Jeremias</option>
+                        <option value="">Ezequiel</option>
+                        <option value="">Daniel</option>
+                        <option value="">Oséias</option>
+                        <option value="">Joel</option>
+                        <option value="">Amós</option>
+                        <option value="">Obadias</option>
+                        <option value="">Jonas</option>
+                        <option value="">Miquéias</option>
+                        <option value="">Naum</option>
+                        <option value="">Habacuque</option>
+                        <option value="">Sofonias</option>
+                        <option value="">Ageu</option>
+                        <option value="">Sofonias</option>
+                        <option value="">Zacarias</option>
+                        <option value="">Malaquias</option>
+                    </optgroup>
+                    <optgroup label="Novo Testamento">
+                        <option value="">Mateus</option>
+                        <option value="">Marcos</option>
+                        <option value="">Lucas</option>
+                        <option value="">João</option>
+                        <option value="">Atos</option>
+                        <option value="">Romanos</option>
+                        <option value="">1 Coríntios</option>
+                        <option value="">2 Coríntios</option>
+                        <option value="">Gálatas</option>
+                        <option value="">Efésios</option>
+                        <option value="">Filipenses</option>
+                        <option value="">Colossenses</option>
+                        <option value="">1 Tessalonissences</option>
+                        <option value="">1 Tessalonissences</option>
+                        <option value="">1 Timóteo</option>
+                        <option value="">2 Timóteo</option>
+                        <option value="">Tito</option>
+                        <option value="">Filemom</option>
+                        <option value="">Hebreus</option>
+                        <option value="">Tiago</option>
+                        <option value="">1 Pedro</option>
+                        <option value="">2 Pedro</option>
+                        <option value="">1 João</option>
+                        <option value="">2 João</option>
+                        <option value="">3 João</option>
+                        <option value="">Judas</option>
+                        <option value="">Apocalipse</option>
+                    </optgroup>
+                </select>
+                <!-- <input type="text" name="ccap" id="iccap" value="1" readonly/> -->
+                <select name="cap-crz" id="icap" onchange="cpt()" style="visibility: visible;">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="gn3-1_crz.html">3</option>
+                    <option value="gn4-1_crz.html">4</option>
+                    <option value="gn5-1_crz.html">5</option>
+                    <option value="gn6-1_crz.html">6</option>
+                    <option value="gn7-1_crz.html">7</option>
+                    <option value="gn8-1_crz.html">8</option>
+                    <option value="gn9-1_crz.html">9</option>
+                    <option value="gn10-1_crz.html">10</option>
+                    <option value="gn11-1_crz.html">11</option>
+                    <option value="gn12-1_crz.html">12</option>
+                    <option value="gn13-1_crz.html">13</option>
+                    <option value="gn14-1_crz.html">14</option>
+                    <option value="gn15-1_crz.html">15</option>
+                    <option value="gn16-1_crz.html">16</option>
+                    <option value="gn17-1_crz.html">17</option>
+                    <option value="gn18-1_crz.html">18</option>
+                    <option value="gn19-1_crz.html">19</option>
+                    <option value="gn20-1_crz.html">20</option>
+                    <option value="gn21-1_crz.html">21</option>
+                    <option value="gn22-1_crz.html">22</option>
+                    <option value="gn23-1_crz.html">23</option>
+                    <option value="gn24-1_crz.html">24</option>
+                    <option value="gn25-1_crz.html">25</option>
+                    <option value="gn26-1_crz.html">26</option>
+                    <option value="gn27-1_crz.html">27</option>
+                    <option value="gn28-1_crz.html">28</option>
+                    <option value="gn29-1_crz.html">29</option>
+                    <option value="gn30-1_crz.html">30</option>
+                    <option value="gn31-1_crz.html">31</option>
+                    <option value="gn32-1_crz.html">32</option>
+                    <option value="gn33-1_crz.html">33</option>
+                    <option value="gn34-1_crz.html">34</option>
+                    <option value="gn35-1_crz.html">35</option>
+                    <option value="gn36-1_crz.html">36</option>
+                    <option value="gn37-1_crz.html">37</option>
+                    <option value="gn38-1_crz.html">38</option>
+                    <option value="gn39-1_crz.html">39</option>
+                    <option value="gn40-1_crz.html">40</option>
+                    <option value="gn40-1_crz.html">40</option>
+                    <option value="gn41-1_crz.html">41</option>
+                    <option value="gn42-1_crz.html">42</option>
+                    <option value="gn43-1_crz.html">43</option>
+                    <option value="gn44-1_crz.html">44</option>
+                    <option value="gn45-1_crz.html">45</option>
+                    <option value="gn46-1_crz.html">46</option>
+                    <option value="gn47-1_crz.html">47</option>
+                    <option value="gn48-1_crz.html">48</option>
+                    <option value="gn49-1_crz.html">49</option>
+                    <option value="gn50-1_crz.html">50</option>
+                </select>
+                <select name="vers" id="ivers" onchange="vrs()">
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="gn1-4_crz.html">4</option>
+                    <option value="gn1-5_crz.html">5</option>
+                    <option value="gn1-6_crz.html">6</option>
+                    <option value="gn1-7_crz.html">7</option>
+                    <option value="gn1-8_crz.html">8</option>
+                    <option value="gn1-9_crz.html">9</option>
+                    <option value="gn1-10_crz.html">10</option>
+                    <option value="gn1-11_crz.html">11</option>
+                    <option value="gn1-12_crz.html">12</option>
+                    <option value="gn1-13_crz.html">13</option>
+                    <option value="gn1-14_crz.html">14</option>
+                    <option value="gn1-15_crz.html">15</option>
+                    <option value="gn1-16_crz.html">16</option>
+                    <option value="gn1-17_crz.html">17</option>
+                    <option value="gn1-18_crz.html">18</option>
+                    <option value="gn1-19_crz.html">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                </select>
+            </div>
+            <br>
+            <p class="tversao-crz"><b>Referências cruzadas</b> são textos que possuem alguma relação ou vínculo
+                semântico.
+            </p>
+
+            <div class="texto-crz texto">
+                <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
+                <!-- <br> -->
+                <div class="setas_crz">
+                    <a href="../../index.html"><i class='bx bx-left-arrow'></i></a>
+                    <a href="gn1-2_crz.html"><i class='bx bx-right-arrow'></i></a>
+
+                    <h1 id="kbc_crz">Gênesis 1:1</h1>
+
+                </div>
+                <p id="t_crz"><em>No princípio criou Deus os céus e a terra.</em></p>
+                <hr id="kbc_crz">
+                <div class="result">
+                    <p><b>Isaías 45:18</b>
+                        Porque assim diz o SENHOR que tem criado os céus, o Deus que formou a terra, e a fez; ele a
+                        confirmou, não a criou vazia, mas a formou para que fosse habitada: Eu sou o SENHOR e não há
+                        outro.
+                    </p>
+                    <p><b>Hebreus 11:3</b>
+                        Pela fé entendemos que os mundos pela palavra de Deus foram criados; de maneira que aquilo que
+                        se vê
+                        não foi feito do que é aparente.</p>
+                    <p><b>Jó 38:4</b>
+                        Onde estavas tu quando eu fundava a terra? Faze-mo saber, se tens inteligência.</p>
+                    <p><b>Apocalipse 4:11</b>
+                        Digno és, Senhor de receber glória, e honra, e poder; porque tu criaste todas as coisas, e por
+                        tua
+                        vontade são e foram criadas.</p>
+                    <p><b>Isaías 42:5</b>
+                        Assim diz Deus, o SENHOR, que criou os céus, e os estendeu, e espraiou a terra, e a tudo quanto
+                        produz; que dá a respiração ao povo que nela está, e o espírito aos que andam nela.</p>
+                    <p><b>João 1:1-3</b>
+                        No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.</p>
+                    <p><b>Atos 17:24</b>
+                        O Deus que fez o mundo e tudo que nele há, sendo Senhor do céu e da terra, não habita em templos
+                        feitos por mãos de homens;</p>
+                    <p><b>Hebreus 1:10</b>
+                        E Tu, Senhor, no princípio fundaste a terra, e os céus são obra de tuas mãos:</p>
+                    <p><b>Êxodo 20:11</b>
+                        Porque em seis dias fez o SENHOR os céus e a terra, o mar e tudo que neles há e ao sétimo dia
+                        descansou; portanto, abençoou o SENHOR o dia do sábado e o santificou.</p>
+                    <p><b>1 Coríntios 8:6</b>
+                        Todavia para nós há um só Deus, o Pai, de quem é tudo e para quem nós vivemos; e um só Senhor,
+                        Jesus
+                        Cristo, pelo qual são todas as coisas, e nós por Ele.</p>
+                    <p><b>Salmos 115:15</b>
+                        Sede benditos do SENHOR, que fez os céus e a terra.</p>
+                    <p><b>Salmos 136:5</b>
+                        Àquele que com entendimento fez os céus; porque a sua benignidade é para sempre.</p>
+                    <p><b>Isaías 44:24</b>
+                        Assim diz o SENHOR, teu redentor, e que te formou desde o ventre: Eu sou o SENHOR que faço tudo,
+                        que
+                        sozinho estendo os céus, e espraio a terra por mim mesmo;</p>
+                    <p><b>Atos 14:15</b>
+                        E dizendo: Varões, porque fazeis essas coisas? Nós também somos homens como vós, sujeitos às
+                        mesmas
+                        paixões, e vos anunciamos que vos convertais dessas vaidades ao Deus vivo, que fez o céu e a
+                        terra,
+                        e o mar, e tudo quanto há neles;</p>
+                    <p><b>Colossenses 1:16-17</b>
+                        Porque nele foram criadas todas as coisas que há nos céus e na terra, visíveis e invisíveis,
+                        sejam
+                        tronos, sejam dominações, sejam principados, sejam potestades: tudo foi criado por ele e para
+                        ele.
+                    </p>
+                    <p><b>Neemias 9:6</b>
+                        Tu só és SENHOR, tu fizeste o céu, o céu dos céus e todo o seu exército, a terra e tudo quanto
+                        nela
+                        há, os mares e tudo quanto neles há; e tu os guardas em vida a todos, e o exército dos céus te
+                        adora.</p>
+                    <p><b>Jó 26:13</b>
+                        Pelo seu Espírito ornou os céus; a sua mão formou a serpente enroscadiça.</p>
+                    <p><b>Salmos 33:6</b>
+                        Pela palavra do SENHOR foram feitos os céus; e todo o exército deles, pelo espírito da sua boca.
+                    </p>
+                    <p><b>Salmos 104:30</b>
+                        Envias o teu Espírito, e são criados, e assim renovas a face da terra.</p>
+                    <p><b>Salmos 146:6</b>
+                        que fez os céus e a terra, o mar e tudo quanto há neles e que guarda a verdade para sempre;</p>
+                    <p><b>Salmos 148:4-5</b>
+                        Louvai-o, céus dos céus, e as águas que estão sobre os céus.</p>
+                    <p><b>Provérbios 3:19</b>
+                        O SENHOR, com sabedoria, fundou a terra; preparou os céus com inteligência.</p>
+                    <p><b>Provérbios 8:22-30</b>
+                        O SENHOR me possuiu no princípio de seus caminhos e antes de suas obras mais antigas.</p>
+                    <p><b>Provérbios 16:4</b>
+                        O SENHOR fez todas as coisas para os seus próprios fins e até ao ímpio, para o dia do mal.</p>
+                    <p><b>Eclesiastes 12:1</b>
+                        Lembra-te do teu Criador nos dias da tua mocidade, antes que venham os maus dias, e cheguem os
+                        anos
+                        dos quais venhas a dizer: Não tenho neles contentamento;</p>
+                    <p><b>Isaías 37:16</b>
+                        O SENHOR dos Exércitos, Deus de Israel, que habitas entre os querubins; tu mesmo, só tu és Deus
+                        de
+                        todos os reinos da terra; tu fizeste os céus e a terra.</p>
+                    <p><b>Isaías 40:26</b>
+                        Levantai ao alto os vossos olhos, e vede quem criou estas coisas; foi aquele que faz sair o
+                        exército
+                        delas segundo o seu número; ele as chama a todas pelos seus nomes; por causa da grandeza das
+                        suas
+                        forças, e porquanto é forte em poder, nenhuma delas faltará.</p>
+                    <p><b>Isaías 40:28</b>
+                        Não sabes, não ouviste que o eterno Deus, o SENHOR, o Criador dos fins da terra, nem se cansa
+                        nem se
+                        fatiga? É inescrutável o seu entendimento.</p>
+                    <p><b>Isaías 51:13</b>
+                        E te esqueces do SENHOR que te criou, que estendeu os céus, e fundou a terra, e temes
+                        continuamente
+                        todo o dia o furor do angustiador, quando se prepara para destruir; pois onde está o furor do
+                        que te
+                        atribulava?</p>
+                    <p><b>Isaías 51:16</b>
+                        E ponho as minhas palavras na tua boca, e te cubro com a sombra da minha mão; para plantar os
+                        céus,
+                        e para fundar a terra, e para dizer a Sião: Tu és o meu povo.</p>
+                    <p><b>Jeremias 10:12</b>
+                        Ele fez a terra com o seu poder; ele estabeleceu o mundo com a sua sabedoria, e com a sua
+                        inteligência estendeu os céus.</p>
+                    <p><b>Jeremias 32:17</b>
+                        Ah Senhor DEUS! Eis que tu fizeste os céus e a terra com o teu grande poder, e com o teu braço
+                        estendido; nada há que te seja demasiado difícil;</p>
+                    <p><b>Jeremias 51:15</b>
+                        Ele fez a terra com o seu poder, e ordenou o mundo com a sua sabedoria, e estendeu os céus com o
+                        seu
+                        entendimento.</p>
+                    <p><b>Zacarias 12:1</b>
+                        Peso da palavra do SENHOR sobre Israel. Fala o SENHOR, o que estende o céu, e que funda a terra,
+                        e
+                        que forma o espírito do homem dentro dele.</p>
+                    <p><b>Mateus 11:25</b>
+                        Naquele tempo, respondendo Jesus, disse: Graças te dou, ó Pai, Senhor do céu e da terra, que
+                        ocultastes estas coisas aos sábios e entendidos e as revelaste aos pequeninos.</p>
+                    <p><b>Marcos 13:19</b>
+                        Porque naqueles dias haverá uma aflição tal, qual nunca houve desde o princípio da criação, que
+                        Deus
+                        criou, até agora, nem jamais haverá.</p>
+                    <p><b>Atos 4:24</b>
+                        E, ouvindo eles isto, unânimes levantaram a voz a Deus, e disseram Senhor, tu és o que fizeste o
+                        céu, e a terra, e o mar, e tudo o que neles há;</p>
+                    <p><b>Romanos 1:19-20</b>
+                        Porquanto o que de Deus se pode conhecer neles se manifesta, porque Deus lho manifestou.</p>
+                    <p><b>Romanos 11:36</b>
+                        Porque dele e por ele, e para ele, são todas as coisas; glória pois a ele eternamente. Amém.</p>
+                    <p><b>Efésios 3:9</b>
+                        E demonstrar a todos qual seja a dispensação do mistério, que desde os séculos esteve oculto em
+                        Deus, que tudo criou;</p>
+                    <p><b>Hebreus 1:2</b>
+                        A quem constituiu herdeiro de tudo, por quem fez também o mundo.</p>
+                    <p><b>Hebreus 3:4</b>
+                        Porque toda a casa é edificada por alguém, mas o que edificou todas as coisas é Deus.</p>
+                    <p><b>2 Pedro 3:5</b>
+                        Eles voluntariamente ignoram isto: que pela palavra de Deus já desde a antiguidade existiram os
+                        céus, e a terra, que foi tirada da água e no meio da água subsiste.</p>
+                    <p><b>1 João 1:1</b>
+                        O QUE era desde o princípio, o que ouvimos, o que vimos com os nossos olhos, o que temos
+                        contemplado, e as nossas mãos tocaram, da Palavra da vida,</p>
+                    <p><b>Apocalipse 3:14</b>
+                        E ao anjo da igreja que está em Laodiceia escreve: Isto diz o Amen, a testemunha fiel e
+                        verdadeira,
+                        o princípio da criação de Deus;</p>
+                    <p><b>Apocalipse 10:6</b>
+                        E jurou por aquele que vive para todo o sempre, o qual criou o céu e o que nele há, e a terra e
+                        o
+                        que nela há, e o mar e o que nele há, que não haveria mais demora;</p>
+                    <p><b>Apocalipse 14:7</b>
+                        Dizendo com grande voz: Temei a Deus, e dai-lhe glória; porque vinda é a hora do seu juízo. E
+                        adorai
+                        aquele que fez o céu, e a terra, e o mar, e as fontes das águas.</p>
+                    <p><b>Apocalipse 21:6</b>
+                        E disse-me mais: Está cumprido Eu sou o Alfa e o Omega, o princípio e o fim. A quem quer que
+                        tiver
+                        sede, de graça lhe darei da fonte da água da vida.</p>
+                    <p><b>Apocalipse 22:13</b>
+                        Eu sou o Alfa e o Omega, o princípio e o fim, o primeiro e o derradeiro.</p>
+                    <p><b>Êxodo 31:18</b>
+                        E deu a Moisés (quando acabou de falar com ele no monte Sinai) as duas tábuas do Testemunho,
+                        tábuas
+                        de pedra, escritas pelo dedo de Deus.</p>
+                    <p><b>1 Crônicas 16:26</b>
+                        Porque todos os deuses das nações são vaidades; porém o SENHOR fez os céus.</p>
+                    <p><b>Salmos 8:3</b>
+                        Quando vejo os teus céus, obra dos teus dedos, a lua e as estrelas que preparaste;</p>
+                    <p><b>Salmos 33:9</b>
+                        Porque falou, e tudo se fez; mandou, e logo tudo apareceu.</p>
+                    <p><b>Salmos 89:11-12</b>
+                        Teus são os céus e tua é a terra; o mundo e a sua plenitude, tu os fundaste.</p>
+                    <p><b>Salmos 90:2</b>
+                        Antes que os montes nascessem, ou que tu formasses a terra e o mundo, sim, de eternidade a
+                        eternidade, tu és Deus.</p>
+                    <p><b>Salmos 96:5</b>
+                        Porque todos os deuses dos povos são coisas vãs; mas o SENHOR fez os céus.</p>
+                    <p><b>Salmos 104:24</b>
+                        Ó SENHOR, quão variadas são as tuas obras! Todas as coisas fizeste com sabedoria; cheia está a
+                        terra
+                        das tuas riquezas.</p>
+                    <p><b>Salmos 121:2</b>
+                        O meu socorro vem do SENHOR, que fez o céu e a terra.</p>
+                    <p><b>Salmos 124:8</b>
+                        O nosso socorro está em o nome do SENHOR, que fez o céu e a terra.</p>
+                    <p><b>Salmos 134:3</b>
+                        O SENHOR, que fez o céu e a terra, te abençoe desde Sião!</p>
+                    <p><b>Salmos 102:25</b>
+                        Desde a antiguidade fundaste a terra; e os céus são obra das tuas mãos.</p>
+                    <p><b>Isaías 65:17</b>
+                        Porque, eis que eu crio novos céus e nova terra; e não haverá mais lembrança das coisas
+                        passadas,
+                        nem mais se recordarão.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <aside id="mcap">
+        <h3 id="tcapitulos">CAPÍTULOS:</h3>
+        <a class="sel" href="gn1_crz.html">1</a> 
+            <a href="gn2-1_crz.html">2</a>
+            <a href="gn3-1_crz.html">3</a>
+            <a href="gn4-1_crz.html">4</a>
+            <a href="gn5-1_crz.html">5</a>
+            <a href="gn6-1_crz.html">6</a>
+            <a href="gn7-1_crz.html">7</a>
+            <a href="gn8-1_crz.html">8</a>
+            <a href="gn9-1_crz.html">9</a>
+            <a href="gn10-1_crz.html">10</a>
+            <a href="gn11-1_crz.html">11</a>
+            <a href="gn12-1_crz.html">12</a>
+            <a href="gn13-1_crz.html">13</a>
+            <a href="gn14-1_crz.html">14</a>
+            <a href="gn15-1_crz.html">15</a>
+            <a href="gn16-1_crz.html">16</a>
+            <a href="gn17-1_crz.html">17</a>
+            <a href="gn18-1_crz.html">18</a>
+            <a href="gn19-1_crz.html">19</a>
+            <a href="gn20-1_crz.html">20</a>
+            <a href="gn21-1_crz.html">21</a>
+            <a href="gn22-1_crz.html">22</a>
+            <a href="gn23-1_crz.html">23</a>
+            <a href="gn24-1_crz.html">24</a>
+            <a href="gn25-1_crz.html">25</a>
+            <a href="gn26-1_crz.html">26</a>
+            <a href="gn27-1_crz.html">27</a>
+            <a href="gn28-1_crz.html">28</a>
+            <a href="gn29-1_crz.html">29</a>
+            <a href="gn30-1_crz.html">30</a>
+            <a href="gn31-1_crz.html">31</a>
+            <a href="gn32-1_crz.html">32</a>
+            <a href="gn33-1_crz.html">33</a>
+            <a href="gn34-1_crz.html">34</a>
+            <a href="gn35-1_crz.html">35</a>
+            <a href="gn36-1_crz.html">36</a>
+            <a href="gn37-1_crz.html">37</a>
+            <a href="gn38-1_crz.html">38</a>
+            <a href="gn39-1_crz.html">39</a>
+            <a href="gn40-1_crz.html">40</a>
+            <a href="gn41-1_crz.html">41</a>
+            <a href="gn42-1_crz.html">42</a>
+            <a href="gn43-1_crz.html">43</a>
+            <a href="gn44-1_crz.html">44</a>
+            <a href="gn45-1_crz.html">45</a>
+            <a href="gn46-1_crz.html">46</a>
+            <a href="gn47-1_crz.html">47</a>
+            <a href="gn48-1_crz.html">48</a>
+            <a href="gn49-1_crz.html">49</a>
+            <a href="gn50-1_crz.html">50</a>
+    </aside> -->
+
+
+</body>
+<footer id="rodape">
+    &copy; &shy;Biblia de Estudo Online
+</footer>
+
+
+>>>>>>> 33abe737bc8cca442d87cfa581ea5758252b6611
 </html>
