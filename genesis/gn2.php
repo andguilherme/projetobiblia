@@ -42,10 +42,17 @@
             <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
         </ul> -->
         <ul class="ferramentas">
+<<<<<<< HEAD
             <li><a href="<!-- comentario/gn1-1_cmt.html -->" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
             <li><a href="<!-- interlinear/gn1-1_int.html -->" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
             <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
             <li><a href="<!-- cruzadas/gn1-1_crz.html -->" title="Referencias Cruzadas">CRUZADAS</a></li>
+=======
+            <li><a href="comentario/gn1-1_cmt.html" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
+            <li><a href="interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+            <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
+            <li><a href="cruzadas/gn1-1_crz.html" title="Referencias Cruzadas">CRUZADAS</a></li>
+>>>>>>> d3cac0cb2e6cc74d618b9577c0662143d020a328
         </ul>
 
         <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" onsearch="minhabusca()" />
