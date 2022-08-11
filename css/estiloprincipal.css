@@ -186,6 +186,10 @@ nav {
 
 }
 
+.navCurta {
+    height: 47px;
+}
+
 .versoes {
     width: 100%;
     height: 35px;
@@ -327,6 +331,10 @@ footer#rodape {
     font-family: sans-serif;
     align-items: center;
     margin-top: 15%;
+}
+
+.margem100 {
+    margin-top: 100% !important;
 }
 
 footer#rodapeP {

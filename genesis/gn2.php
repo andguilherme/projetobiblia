@@ -1,3 +1,8 @@
+<?php
+    require('../conexao.php');
+
+    ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,9 +52,11 @@
             <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
             <li><a href="cruzadas/gn1-1_crz.html" title="Referencias Cruzadas">CRUZADAS</a></li>
         </ul>
-
-        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" onsearch="minhabusca()" />
-
+       
+        <form action="busca.php" method="GET">
+        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" />
+        </form>
+       
         <div class="menu-bar mobile">
             <ul>
 
@@ -79,10 +86,7 @@
 
         </div>
     </nav>
-    <?php
-    require('../conexao.php');
-
-    ?>
+   
 
     <div class="breadscrumbs">
 
@@ -101,6 +105,7 @@
                     $livro = $_GET['livro'];
                     $capitulo = $_GET['mcapitulo'];
                     $vers = $_GET['versaoLv'];
+                    $texto_pesquisa = $_GET['pesquisa'];
                     $conn = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $stmt = $conn->prepare("SELECT ver_capitulo, ver_versiculo, ver_texto from versiculos WHERE ver_vrs_id=? AND ver_liv_id=? AND ver_capitulo=?");
