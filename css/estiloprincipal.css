@@ -97,6 +97,11 @@ p#lv {
     margin: 0;
 }
 
+.bresult {
+    margin: 5px auto !important;
+    border-bottom: solid 1px #b3aaaa;
+}
+
 .result p {
     border-bottom: solid 1px #eee;
     padding-bottom: 10px;
