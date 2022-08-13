@@ -363,7 +363,7 @@ input#busca,
 #busca-principal {
     background-image: url(../img/icone-search.png);
     background-repeat: no-repeat;
-    background-position: 96%;
+    background-position: 93%;
     height: 36px;
     width: 26%;
     border: 1px solid rgba(0, 0, 0, .35);
@@ -372,8 +372,11 @@ input#busca,
 
 #busca {
 
-    position: relative;
+    /* position: relative;
     bottom: 64.5%;
+    left: 72%; */
+    position: absolute;
+    bottom: 89.5%;
     left: 72%;
 }
 
