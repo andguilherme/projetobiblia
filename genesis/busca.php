@@ -1,7 +1,7 @@
 <?php
 require('../conexao.php');
 
-$texto_pesquisa = $_GET['pesquisa'];
+$texto_pesquisa = iconv('UTF-8', 'ISO-8859-1', $_GET['pesquisa']);
 
 $conn = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -91,7 +91,7 @@ $versiculo = $result['ver_versiculo'];
 
     <div id="corpo">
         <?php
-        echo "<h1 style = 'margin: 20px 16px'>Resultado da Busca </h1>";
+        echo "<h1 style = 'margin: 20px 16px'>Resultado da Busca por '$texto_pesquisa'</h1> ";
   /*       echo iconv('UTF-8', 'ISO-8859-1',"<h3>Versão: Almeida Revisada e Atualizada</h3>"); */
         echo "<br>";
         $in = 'gn2.php?';
