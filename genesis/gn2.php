@@ -7,7 +7,7 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="iso-8859-1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
@@ -47,14 +47,14 @@
             <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
         </ul> -->
         <ul class="ferramentas">
-            <li><a href="comentario/gn1-1_cmt.html" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
-            <li><a href="interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+            <li><a href="#" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
+            <li><a href="#" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
             <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
-            <li><a href="cruzadas/gn1-1_crz.html" title="Referencias Cruzadas">CRUZADAS</a></li>
+            <li><a href="#" title="Referencias Cruzadas">CRUZADAS</a></li>
         </ul>
        
-        <form action="busca.php" method="GET">
-        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" />
+        <form action="buscaB.php" method="GET">
+        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" required />
         </form>
        
         <div class="menu-bar mobile">
@@ -63,10 +63,10 @@
                 <li><a href="#">Ferramentas</a>
                     <div class="sub-menu-1">
                         <ul>
-                            <li><a href="comentario/gn1-1_cmt.html">Comentario</a></li>
-                            <li><a href="interlinear/gn1-1_int.html">Interlinear</a></li>
+                            <li><a href="#">Comentario</a></li>
+                            <li><a href="#">Interlinear</a></li>
                             <li><a href="#">Dicionario</a></li>
-                            <li><a href="cruzadas/gn1-1_crz.html">Cruzadas</a>
+                            <li><a href="#">Cruzadas</a>
                             
                         </ul>
                         

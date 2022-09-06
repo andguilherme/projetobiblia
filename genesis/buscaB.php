@@ -1,7 +1,7 @@
 <?php
 require('../conexao.php');
 
-$texto_pesquisa = iconv('UTF-8', 'ISO-8859-1', $_GET['pesquisa']);
+$texto_pesquisa =  $_GET['pesquisa'];
 
 $conn = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
