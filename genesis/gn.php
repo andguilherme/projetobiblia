@@ -50,38 +50,50 @@
 
         <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" onsearch="minhabusca()" />
 
-        <div class="menu-bar mobile">
+        <!-- <li><a href="#" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
+            <li><a href="#" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+            <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
+            <li><a href="#" title="Referencias Cruzadas">CRUZADAS</a></li> -->
             <ul>
 
-                <li><a href="#">Ferramentas</a>
-                    <div class="sub-menu-1">
-                        <ul>
-                            <li><a href="comentario/gn1-1_cmt.html">Comentario</a></li>
-                            <li><a href="interlinear/gn1-1_int.html">Interlinear</a></li>
-                            <li><a href="#">Dicionario</a></li>
-                            <li><a href="cruzadas/gn1-1_crz.html">Cruzadas</a>
-                        </ul>
-                    </div>
+                <!-- <li><a href="#">Ferramentas</a> -->
+                <li><a href="gn2.php?livro=1&mcapitulo=1&versaoLv=6">NVI</a></li>
+                <li><a href="gn2.php?livro=1&mcapitulo=1&versaoLv=2">ARC</a></li>
+                <li><a href="gn2.php?livro=1&mcapitulo=1&versaoLv=5">NTLH</a></li>
+                <li><a href="gn2.php?livro=1&mcapitulo=1&versaoLv=9">AR</a></li>
+
+                <!--   <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Comentário</a></li>
+              <li><a href="#">Interlinear</a></li>
+              <li><a href="#">Dicionário</a></li>
+              <li><a href="#">Cruzadas</a>
+
+            </ul>
+          </div> -->
                 </li>
-                <li><a href="#">Versoes</a>
-                    <div class="sub-menu-1">
-                        <ul>
-                            <li><a href="NVI/gn1_nvi.html">NVI</a></li>
-                            <li><a href="#">ACF</a></li>
-                            <li><a href="NTLH/gn1_ntlh.html">NTLH</a></li>
-                        </ul>
-                    </div>
+                <!--   <li><a href="#">Versões</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=6">NVI</a></li>
+              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=2">ARC</a></li>
+              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=5">NTLH</a></li>
+              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=9">AR</a></li>
+
+            </ul>
+          </div>
+        </li> -->
             </ul>
 
         </div>
     </nav>
     <?php
     require('../conexao.php');
-    
+
     ?>
-    
+
     <div class="breadscrumbs">
-    
+
         <!-- <a href="../index.html"> Biblia</a> &shy; > <a href="#">ACF</a>
         <span style="color: #606060">&shy; >  &shy;</span> -->
         <a href="../index.html"><i class='bx bx-home' style="font-size: 22pt;"></i></a>
@@ -152,7 +164,7 @@
                     </optgroup>
 
                     <optgroup label="Novo Testamento">
-                        
+
                         <option value="40" <?php if ($livro == '40') echo "selected=\"selected\""; ?>>Mateus</option>
                         <option value="41" <?php if ($livro == '41') echo "selected=\"selected\""; ?>>Marcos</option>
                         <option value="42" <?php if ($livro == '42') echo "selected=\"selected\""; ?>>Lucas</option>
@@ -198,7 +210,7 @@
 
                         echo "<option value='$i'>$i</option>" . '<br>';
                     }
-                    
+
                     ?>
                 </select>
                 <select name="versaoLv" id="versaoLv" onchange="this.form.submit()">
@@ -213,14 +225,14 @@
 
         <br>
 
-       
+
         <div class="textoLv">
             <!-- <iframe id="vcap" src=" "  width="100%" height="60%"></iframe> -->
             <!-- <br> -->
             <p id='lv'></p>
-           
+
             <?php
-            
+
             echo "<h1>$titulo_livro $capitulo</h1>";
             echo '<hr>';
             echo '<p id="lv">' . '<strong>' . $result['ver_versiculo'] . '</strong>' . ' ' . $result['ver_texto'] . '</p>' . '<br>';
@@ -235,7 +247,7 @@
         </div>
     </div>
 
-  <!--   <div class="setas">
+    <!--   <div class="setas">
         
          <a href="javascript:location.href=this.value"><i class='bx bx-left-arrow'></i></a>
         
@@ -248,36 +260,35 @@
     <input type="button" value=&rarr; id="next">
     <input type="button" value=&larr; id="prev">
     <script>
-         text = <?php echo "$capitulo".PHP_EOL; ?>
-         select = document.querySelector('#capitulo_geral');
-         t = document.querySelector('#capitulo_geral').length;
-         if (text <= t){
-         select.value=text;
-         }else{
+        text = <?php echo "$capitulo" . PHP_EOL; ?>
+        select = document.querySelector('#capitulo_geral');
+        t = document.querySelector('#capitulo_geral').length;
+        if (text <= t) {
+            select.value = text;
+        } else {
             document.querySelector('.textoLv h1').textContent = '';
-            select.value='';
-         }
+            select.value = '';
+        }
 
         document.getElementById("next").onclick = function() {
-        select = document.querySelector('#capitulo_geral')
-        b = select.options[select.selectedIndex].value;
-        v = parseInt(b);
-        select.selectedIndex = b;
-        select.onchange();
-                
+            select = document.querySelector('#capitulo_geral')
+            b = select.options[select.selectedIndex].value;
+            v = parseInt(b);
+            select.selectedIndex = b;
+            select.onchange();
+
         }
         document.getElementById("prev").onclick = function() {
-        select = document.querySelector('#capitulo_geral')
-        b = select.options[select.selectedIndex].value;
-        v = parseInt(b);
-        select.selectedIndex = b-2;
-        select.onchange();
-                
-        }
+            select = document.querySelector('#capitulo_geral')
+            b = select.options[select.selectedIndex].value;
+            v = parseInt(b);
+            select.selectedIndex = b - 2;
+            select.onchange();
 
+        }
     </script>
     <script src="../js/busca.js"></script>
-    
+
 </body>
 
 </html>

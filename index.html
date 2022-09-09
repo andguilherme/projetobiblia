@@ -33,44 +33,54 @@
   </header>
   <nav>
     <ul class="versoes">
-      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=6" title=" Nova Versão Internacional">NVI</a></li>
-      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=2" title=" Almeida Revisada e Corrigida ">ARC</a></li>
-      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=2" title="Almeida Revista e Atualizada">ARA</a></li>
+      <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a>
+      </li>
       <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
 
     </ul>
     <ul class="ferramentas">
-      <li><a href="#" title="Comentário Bíblico">COMENTÁRIO</a></li>
+      <!-- <li><a href="#" title="Comentário Bíblico">COMENTÁRIO</a></li>
       <li><a href="#" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
-      <li><a href="construcao.html" title="Dicionário Bíblico">DICIONÁRIO</a></li>
-      <li><a href="genesis/cruzadas/gn1-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+      <li><a href="#" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+      <li><a href="#" title="Referências Cruzadas">CRUZADAS</a></li> -->
 
     </ul>
 
     <div class="menu-bar mobile">
       <ul>
+        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5"
+            title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1"
+            title="Almeida Revista e Atualizada">ARA</a></li>
+        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6"
+            title="Nova Versão Internacional">NVI</a></li>
+        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9"
+            title="Almeida - Texto Recebido">AR</a></li>
 
-        <li><a href="#">Ferramentas</a>
-          <div class="sub-menu-1">
-            <ul>
-              <li><a href="#">Comentário</a></li>
-              <li><a href="#">Interlinear</a></li>
-              <li><a href="#">Dicionário</a></li>
-              <li><a href="#">Cruzadas</a>
+        <!-- <li><a href="#">Ferramentas</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Comentario</a></li>
+                    <li><a href="#">Interlinear</a></li>
+                    <li><a href="#">Dicionario</a></li>
+                    <li><a href="#">Cruzadas</a>
 
-            </ul>
-          </div>
+                </ul>
+
+            </div>
         </li>
-        <li><a href="#">Versões</a>
-          <div class="sub-menu-1">
-            <ul>
-              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=6">NVI</a></li>
-              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=2">ARC</a></li>
-              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=5">NTLH</a></li>
-              <li><a href="genesis/gn2.php?livro=1&mcapitulo=1&versaoLv=9">AR</a></li>
-
-            </ul>
-          </div>
+        <li><a href="#">Versoes</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+                    <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
+                    <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                    <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
+                </ul>
+            </div> -->
+        <!-- <li><input type="search" name="pesquisa" id="busca-mobile" placeholder="Busca na Biblia" onsearch="minhabusca()" style="display: none" /></li> -->
       </ul>
 
     </div>
@@ -83,9 +93,13 @@
   <main>
 
     <div class="int">
-      <p>Bem-vindo a<strong> Biblia de Estudo Online,</strong> com ferramentas para auxiliarem no estudo bíblico:
-        concordância exaustiva, apresentação do texto em grego e hebraico, dicionário e referências cruzadas. Tudo para
-        proporcionar um ambiente de estudo bíblico completo.</p>
+      <p>Bem-vindo ao<strong> Projeto Biblia.</strong> A Biblia de Estudo Online que possui quatro versões para
+        facilitar sua leitura: Almeida Revisada e Corrigida (ARA), Nova Tradução na Linguagem de Hoje (NTLH), Nova
+        Versão Internacional (NVI) e Almeida Texto Recebido (AR).</p>
+      <!-- com ferramentas para auxiliarem no estudo bíblico:
+        Comentário bíblico para auxiliar na descoberta do significado mais profundo da Palavra de Deus e na revelação de
+        sua mensagem. Apresentação do texto em grego e hebraico, dicionário e referências cruzadas. Tudo para
+        proporcionar um ambiente de estudo bíblico completo.</p> -->
       <!-- <h3>Ferramentas</h3>
       <p><b>Comentário Bíblico</b> - Traz uma explicação teológica abrangente do texto que está sendo lido;</p> 
             <p><b>Interlinear</b> - Coloca o texto bíblico em português em debaixo da lingua em que foi escrita (grego ou Hebraico). </p>

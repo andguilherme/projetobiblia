@@ -45,34 +45,43 @@ $versiculo = $result['ver_versiculo'];
     <nav class="navCurta">
 
         <ul class="ferramentas">
-            <li><a href="comentario/gn1-1_cmt.html" title="Comentário Bíblico">COMENTARIO</a></li>
-            <li><a href="interlinear/gn1-1_int.html" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
-            <li><a href="#" title="Dicionário Bíblico">DICIONARIO</a></li>
-            <li><a href="cruzadas/gn1-1_crz.html" title="Referências Cruzadas">CRUZADAS</a></li>
+            <!--  <li><a href="#" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
+            <li><a href="#" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+            <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
+            <li><a href="#" title="Referencias Cruzadas">CRUZADAS</a></li> -->
         </ul>
 
 
-        <div class="menu-bar mobile">
-            <ul>
 
-                <li><a href="#">Ferramentas</a>
+        <div class="menu-bar mobile">
+            <!--  <ul>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li> -->
+
+            <!-- <li><a href="#">Ferramentas</a>
                     <div class="sub-menu-1">
                         <ul>
                             <li><a href="#">Comentario</a></li>
                             <li><a href="#">Interlinear</a></li>
                             <li><a href="#">Dicionario</a></li>
                             <li><a href="#">Cruzadas</a>
+
                         </ul>
+
                     </div>
                 </li>
                 <li><a href="#">Versoes</a>
                     <div class="sub-menu-1">
                         <ul>
-                            <li><a href="NVI/gn1_nvi.html">NVI</a></li>
-                            <li><a href="#">ACF</a></li>
-                            <li><a href="NTLH/gn1_ntlh.html">NTLH</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
                         </ul>
-                    </div>
+                    </div> -->
+            <!-- <li><input type="search" name="pesquisa" id="busca-mobile" placeholder="Busca na Biblia" onsearch="minhabusca()" style="display: none" /></li> -->
             </ul>
 
         </div>
@@ -91,25 +100,25 @@ $versiculo = $result['ver_versiculo'];
 
     <div id="corpo">
         <?php
-       
-            echo "<h1 style = 'margin: 20px 16px'>Resultado da Busca por '$texto_pesquisa'</h1> ";
-            /*       echo iconv('UTF-8', 'ISO-8859-1',"<h3>Versão: Almeida Revisada e Atualizada</h3>"); */
-            echo "<br>";
-            $in = 'gn2.php?';
-            $l = $result['ver_liv_id'];
-            $c =  $result['ver_capitulo'];
-            $v =  $result['ver_vrs_id'];
-            if ($l != null) {
-                echo '<a href=' . $in . 'livro=' . $l . '&' . 'mcapitulo=' . $c . '&' . 'versaoLv=' . $v . '>' . '<p id="lv" class="bresult">' . '<strong>' . $result['liv_nome'] . ' ' . $result['ver_capitulo'] . ':' . $result['ver_versiculo'] . '</strong>' .  ' ' . $result['ver_texto'] . '</p>' . '</a>' . '<br>';
 
-                foreach ($stmt->fetchAll() as $k) {;
-                    echo '<a href=' . $in . 'livro=' . $k['ver_liv_id'] . '&' . 'mcapitulo=' . $k['ver_capitulo'] . '&' . 'versaoLv=' . $k['ver_vrs_id'] . '>' . '<p id="lv" class="bresult">' . '<strong>' . $k['liv_nome'] . ' ' . $k['ver_capitulo'] . ': ' . $k['ver_versiculo'] . '</strong>' .  ' ' . $k['ver_texto'] . '</p>' . '</a>' . '<br>';
-                }
-            } else {
-                $msg = "<h2 style = 'margin: 20px 16px'>Nada encontrado na versão ARA com os termos usados</h2>";
-                echo iconv('UTF-8', 'ISO-8859-1', $msg);
+        echo "<h1 style = 'margin: 20px 16px'>Resultado da Busca por '$texto_pesquisa'</h1> ";
+        /*       echo iconv('UTF-8', 'ISO-8859-1',"<h3>Versão: Almeida Revisada e Atualizada</h3>"); */
+        echo "<br>";
+        $in = 'gn2.php?';
+        $l = $result['ver_liv_id'];
+        $c =  $result['ver_capitulo'];
+        $v =  $result['ver_vrs_id'];
+        if ($l != null) {
+            echo '<a href=' . $in . 'livro=' . $l . '&' . 'mcapitulo=' . $c . '&' . 'versaoLv=' . $v . '>' . '<p id="lv" class="bresult">' . '<strong>' . $result['liv_nome'] . ' ' . $result['ver_capitulo'] . ':' . $result['ver_versiculo'] . '</strong>' .  ' ' . $result['ver_texto'] . '</p>' . '</a>' . '<br>';
+
+            foreach ($stmt->fetchAll() as $k) {;
+                echo '<a href=' . $in . 'livro=' . $k['ver_liv_id'] . '&' . 'mcapitulo=' . $k['ver_capitulo'] . '&' . 'versaoLv=' . $k['ver_vrs_id'] . '>' . '<p id="lv" class="bresult">' . '<strong>' . $k['liv_nome'] . ' ' . $k['ver_capitulo'] . ': ' . $k['ver_versiculo'] . '</strong>' .  ' ' . $k['ver_texto'] . '</p>' . '</a>' . '<br>';
             }
-        
+        } else {
+            $msg = "<h2 style = 'margin: 20px 16px'>Nada encontrado na versão ARA com os termos usados</h2>";
+            echo iconv('UTF-8', 'ISO-8859-1', $msg);
+        }
+
         ?>
 
 

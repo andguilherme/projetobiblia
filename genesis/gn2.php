@@ -1,7 +1,7 @@
 <?php
-    require('../conexao.php');
+require('../conexao.php');
 
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,46 +47,50 @@
             <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
         </ul> -->
         <ul class="ferramentas">
-            <li><a href="#" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
+            <!-- <li><a href="#" title="Comentario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'COMENTÁRIO'); ?> </a></li>
             <li><a href="#" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
             <li><a href="#" title="Dicionario Biblico"><?php echo iconv('UTF-8', 'ISO-8859-1', 'DICIONÁRIO'); ?></a></li>
-            <li><a href="#" title="Referencias Cruzadas">CRUZADAS</a></li>
+            <li><a href="#" title="Referencias Cruzadas">CRUZADAS</a></li> -->
         </ul>
-       
+
         <form action="buscaB.php" method="GET">
-        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" required />
+            <input type="search" name="pesquisa" id="busca" placeholder="Busca na Biblia" required />
         </form>
-       
+
         <div class="menu-bar mobile">
             <ul>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
 
-                <li><a href="#">Ferramentas</a>
+                <!-- <li><a href="#">Ferramentas</a>
                     <div class="sub-menu-1">
                         <ul>
                             <li><a href="#">Comentario</a></li>
                             <li><a href="#">Interlinear</a></li>
                             <li><a href="#">Dicionario</a></li>
                             <li><a href="#">Cruzadas</a>
-                            
+
                         </ul>
-                        
+
                     </div>
                 </li>
                 <li><a href="#">Versoes</a>
                     <div class="sub-menu-1">
                         <ul>
-                        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
-                        <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
-                         <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
-                         <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=5" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=1" title="Almeida Revista e Atualizada">ARA</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=6" title="Nova Versão Internacional">NVI</a></li>
+                            <li><a href="gn2.php?livro=<?php echo $_GET['livro'] ?>&mcapitulo=<?php echo $_GET['mcapitulo'] ?>&versaoLv=9" title="Almeida - Texto Recebido">AR</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 <!-- <li><input type="search" name="pesquisa" id="busca-mobile" placeholder="Busca na Biblia" onsearch="minhabusca()" style="display: none" /></li> -->
             </ul>
 
         </div>
     </nav>
-   
+
 
     <div class="breadscrumbs">
 
@@ -117,16 +121,16 @@
                     $dados = $sql->fetch(PDO::FETCH_ASSOC);
                     $titulo_livro = $dados['liv_nome'];
                     $qtd = $dados['qt_cap'];
-                    
+
                     ?>
                     <optgroup label="Antigo Testamento">
                         <option value="" style="text-align:center ;">Selecione um livro</option>
                         <option value="1" <?php if ($livro == '1') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Gênesis'); ?></option>
                         <option value="2" <?php if ($livro == '2') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Êxodo'); ?></option>
-                        <option value="3" <?php if ($livro == '3') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Levítico');?></option>
-                        <option value="4" <?php if ($livro == '4') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Números')?></option>
-                        <option value="5" <?php if ($livro == '5') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Deuteronômio');?></option>
-                        <option value="6" <?php if ($livro == '6') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Josué');?></option>
+                        <option value="3" <?php if ($livro == '3') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Levítico'); ?></option>
+                        <option value="4" <?php if ($livro == '4') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Números') ?></option>
+                        <option value="5" <?php if ($livro == '5') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Deuteronômio'); ?></option>
+                        <option value="6" <?php if ($livro == '6') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Josué'); ?></option>
                         <option value="7" <?php if ($livro == '7') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'Juízes'); ?></option>
                         <option value="8" <?php if ($livro == '8') echo "selected=\"selected\""; ?>>Rute</option>
                         <option value="9" <?php if ($livro == '9') echo "selected=\"selected\""; ?>>1 Samuel</option>
@@ -167,7 +171,7 @@
                         <option value="40" <?php if ($livro == '40') echo "selected=\"selected\""; ?>>Mateus</option>
                         <option value="41" <?php if ($livro == '41') echo "selected=\"selected\""; ?>>Marcos</option>
                         <option value="42" <?php if ($livro == '42') echo "selected=\"selected\""; ?>>Lucas</option>
-                        <option value="43" <?php if ($livro == '43') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'João');?></option>
+                        <option value="43" <?php if ($livro == '43') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', 'João'); ?></option>
                         <option value="44" <?php if ($livro == '44') echo "selected=\"selected\""; ?>>Atos</option>
                         <option value="45" <?php if ($livro == '45') echo "selected=\"selected\""; ?>>Romanos</option>
                         <option value="46" <?php if ($livro == '46') echo "selected=\"selected\""; ?>><?php echo iconv('UTF-8', 'ISO-8859-1', '1 Coríntios'); ?></option>
@@ -246,7 +250,7 @@
                 echo '<p id="lv">' . '<strong>' . $k['ver_versiculo'] . '</strong>' . ' ' . $k['ver_texto'] . '</p>' . '<br>';
             }
             $cap = $_GET['mcapitulo'];
-            $qtd = $dados['qt_cap'] ;
+            $qtd = $dados['qt_cap'];
             $n = $capitulo + 1;
             $p = $capitulo - 1;
             ?>
@@ -254,11 +258,15 @@
         </div>
     </div>
     <div class="setas">
-        <a href="<?php if ($cap>1){ echo "gn2.php?livro=$livro&mcapitulo=$p&versaoLv=$vers";} ?>"><i class='bx bx-left-arrow'></i></a>
-        <a href="<?php if ($cap < $qtd) {echo "gn2.php?livro=$livro&mcapitulo=$n&versaoLv=$vers";} ?>"><i class='bx bx-right-arrow'></i></a>
+        <a href="<?php if ($cap > 1) {
+                        echo "gn2.php?livro=$livro&mcapitulo=$p&versaoLv=$vers";
+                    } ?>"><i class='bx bx-left-arrow'></i></a>
+        <a href="<?php if ($cap < $qtd) {
+                        echo "gn2.php?livro=$livro&mcapitulo=$n&versaoLv=$vers";
+                    } ?>"><i class='bx bx-right-arrow'></i></a>
     </div>
     <footer id="rodape">
-        &copy; &shy;Projeto Biblia Online 
+        &copy; &shy;Projeto Biblia Online
         <label style="margin-right: 2%;">andersonguilherme.com.br</label>
     </footer>
     <input type="button" value=&rarr; id="next" title="Proxima pagina">
@@ -276,20 +284,20 @@
             select.value = '';
         }
         //function das setas
-        var cap = <?php echo $_GET['mcapitulo'];?><?php echo PHP_EOL ?>
-        var qtd = <?php echo $dados['qt_cap'] ;?><?php echo PHP_EOL ?>
+        var cap = <?php echo $_GET['mcapitulo']; ?><?php echo PHP_EOL ?>
+        var qtd = <?php echo $dados['qt_cap']; ?><?php echo PHP_EOL ?>
         document.getElementById("next").onclick = function() {
             if (cap < qtd) {
-            var n = <?php echo $n = $capitulo + 1; ?><?php echo PHP_EOL ?>
-            window.location.href = (<?php echo "'gn2.php?livro=$livro&mcapitulo=$n&versaoLv=$vers'"; ?>);
+                var n = <?php echo $n = $capitulo + 1; ?><?php echo PHP_EOL ?>
+                window.location.href = (<?php echo "'gn2.php?livro=$livro&mcapitulo=$n&versaoLv=$vers'"; ?>);
             }
         }
         if (cap > 1) {
-        document.getElementById("prev").onclick = function() {
-            var p = <?php echo $p = $capitulo - 1; ?><?php echo PHP_EOL ?>
-            window.location.href = (<?php echo "'gn2.php?livro=$livro&mcapitulo=$p&versaoLv=$vers'"; ?>);
+            document.getElementById("prev").onclick = function() {
+                var p = <?php echo $p = $capitulo - 1; ?><?php echo PHP_EOL ?>
+                window.location.href = (<?php echo "'gn2.php?livro=$livro&mcapitulo=$p&versaoLv=$vers'"; ?>);
+            }
         }
-    }
     </script>
 
     <script src="../js/busca.js"></script>

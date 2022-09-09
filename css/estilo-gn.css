@@ -415,6 +415,7 @@ select#icap {
     }
 
     .menu-bar ul {
+        width: 80%;
         display: inline-flex;
         list-style: none;
         color: white;
