@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/estiloprincipal.css" />
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
+
+    <title>Bíblia de Estudo Online</title>
+
+    <script>
+
+        function lvr() {
+
+            var select = document.getElementById('tst');
+
+            var b = select.options[select.selectedIndex].value;
+
+            window.location.href = (b);
+
+        }
+
+        function vrs() {
+
+            var select = document.getElementById('ivers');
+
+            var b = select.options[select.selectedIndex].value;
+
+            window.location.href = (b);
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="cabecalho">
+
+            <img src="img/cruz-a-tinta.png" />
+
+            <em>Bíblia de Estudo Online</em>
+
+        </div>
+
+    </header>
+
+    <nav style="height: 80%;">
+
+        <ul class="versoes">
+
+            <li><a href="genesis/NVI/gn1_nvi.html" title="Nova Versão Internacional">NVI</a></li>
+
+            <li><a href="genesis/gn1_acf.html" title="Almeida Corrigida e Fiel">ACF</a></li>
+
+            <li><a href="" title="Nova Tradução da Linguagem de Hoje">NTLH</a></li>
+
+
+
+        </ul>
+
+        <ul class="ferramentas">
+
+            <li><a href="" title="Comentário Bíblico">COMENTÁRIO</a></li>
+
+            <li><a href="" title="Português - Grego/Hebraico interlinear">INTERLINEAR</a></li>
+
+            <li><a href="construcao.html" title="Dicionário Bíblico">DICIONÁRIO</a></li>
+
+            <li><a href="#" title="Referências Cruzadas">CRUZADAS</a></li>i>
+
+        </ul>
+
+
+
+        <input type="search" name="pesquisa" id="busca" placeholder="Busca na Bíblia" />
+
+    </nav>
+    <main>
+        <h2>Este serviço estará disponível em breve</h2>
+    </main>
+
+
+
+    <style>
+        body {
+
+            height: 1100px;
+
+            background-image: url(img/pagina-em-construcao.png);
+
+            background-size: 30% 30%;
+
+            background-repeat: no-repeat;
+
+            background-position-x: 50%;
+
+            background-position-y: 43%;
+
+        }
+
+        main {
+            display: inherit;
+            transform: translateY(-87%);
+            text-align: center;
+            font-family: 'Open Sans';
+
+        }
+    </style>
+
+    <script src="js/livros.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+    <!-- <footer id="rodape">
+
+            &copy; &shy;Biblia de Estudo Online
+
+            <span>andersonguilherme.com.br</span>
+
+         </footer>       -->
+
+</body>
+
+
+
+
+
+
+
+</html>

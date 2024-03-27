@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&family=Nova+Script&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&family=Nova+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@200&family=Poppins:wght@300&family=Style+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 1200px;
+    display: block;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+#next {
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    bottom: 20%;
+    left: 96%;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 1px #999393;
+    font-size: 23pt;
+    text-align: left;
+    text-indent: 21px;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    color: #000;
+}
+
+#next:hover {
+    background-color: rgba(211, 211, 211, 0.575);
+}
+
+#prev {
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    bottom: 20%;
+    left: -3.5%;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 1px #999393;
+    font-size: 23pt;
+    text-align: right;
+    padding-right: 21px;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    color: #000;
+}
+
+#prev:hover {
+    background-color: rgba(211, 211, 211, 0.575);
+}
+
+
+.b-crz {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+p {
+    margin-left: 4%;
+    margin-bottom: 10px;
+    width: 97%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+p#lv {
+    width: 97%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bresult {
+    margin: 5px auto !important;
+    border-bottom: solid 1px #b3aaaa;
+}
+
+.result p {
+    border-bottom: solid 1px #eee;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+/* estilo do cabeçalho */
+
+header {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100px;
+    /* margin-top: -5px; */
+    background-color: lightseagreen;
+    /* #499eb74d; */
+    /* box-shadow: 1px 1px 6px; */
+    /* border-radius: 6px; */
+    margin: 0px;
+
+}
+
+.cabecalho em {
+    font-family: 'Righteous', cursive;
+    vertical-align: 31px;
+    font-size: 30pt;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+}
+
+.cabecalho img {
+    margin: 0;
+    margin-top: 0;
+    margin-left: 2%;
+
+}
+
+#cVrs {
+    float: left;
+
+}
+
+/* Estilo das opções dos livros */
+
+.livros-principal {
+    margin-left: 39px;
+}
+
+.livros-principal select#ilivros {
+    width: 220px;
+    height: 46px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    background-color: #f4f4f4;
+    margin: 33px 27px 25px 0px;
+}
+
+.vt {
+    top: 100px;
+    position: relative;
+}
+
+.nt {
+    top: 100px;
+    position: relative;
+}
+
+.nt p {
+    margin-left: 0%;
+    margin-bottom: 35px;
+    width: 97%;
+    text-align:
+}
+
+/* estilo do menu versões e ferramentas */
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: block;
+
+}
+
+.navCurta {
+    height: 47px;
+}
+
+.versoes {
+    width: 100%;
+    height: 35px;
+    list-style: none;
+    margin: 8px 0 0 0px;
+    background-color: whitesmoke;
+    display: block;
+    position: absolute;
+    top: 135px;
+    margin: 0px;
+}
+
+
+.ferramentas {
+    height: 35px;
+    width: 100%;
+    list-style: none;
+    background-color: #dadada;
+    display: block;
+    position: absolute;
+    top: 100px;
+    margin: 0px;
+
+}
+
+.ferramentas li {
+    float: left;
+    padding-right: 58px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 7px 0px 0px 4px;
+    font-size: 13pt;
+    position: relative;
+    left: 20%;
+}
+
+.versoes li {
+    float: left;
+    padding-right: 58px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 7px 0px 0px 4px;
+    font-size: 13pt;
+    position: relative;
+    left: 33%;
+}
+
+nav li:hover,
+.ferramentas:hover {
+    text-decoration: underline;
+
+}
+
+/* Estilo da introdução, main */
+main {
+	width: 80%;
+    max-width: 1600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+	margin: 0 auto;
+}
+
+#m-crz {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+.livros {
+    width: 100%;
+    height: 100%;
+}
+
+.int {
+    width: 100%;
+    height: 110px;
+    margin-left: 0 0 0 3%;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+/* .vt {
+    width: 70%;
+    height: 388px;
+} */
+
+.col1,
+.nt {
+    width: 93%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 0px;
+    margin-left: 41px;
+    margin-top: 39px;
+    margin-bottom: 5%;
+}
+
+.col1 a,
+.nt a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 500;
+    margin: 0px 15px 11px 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9px #ccc;
+    border-radius: 7px;
+    padding: 6px;
+}
+
+.col1 a:hover,
+.nt a:hover {
+    /* color: rgb(11, 132, 168) ; */
+    font-weight: bolder;
+    /* text-decoration: underline; */
+    box-shadow: 0px 0px 2px black;
+    transition: 0.2s;
+    ;
+}
+
+
+/* Estilo rodapé */
+footer#rodape {
+    /* clear: both; */
+    width: 100%;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252323;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.margem100 {
+    margin-top: 100% !important;
+}
+
+footer#rodapeP {
+    /* clear: both; */
+    width: 100%;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252323;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    
+}
+
+
+footer span {
+    float: right;
+
+
+
+}
+
+/* Estilo campo busca */
+input#busca,
+#busca-principal {
+    background-image: url(../img/icone-search.png);
+    background-repeat: no-repeat;
+    background-position: 93%;
+    height: 36px;
+    width: 26%;
+    border: 1px solid rgba(0, 0, 0, .35);
+    border-radius: 5px;
+}
+
+#busca {
+
+    /* position: relative;
+    bottom: 64.5%;
+    left: 72%; */
+    position: relative;
+    bottom: 67px;
+    left: 72%;
+}
+
+#busca-principal {
+    position: relative;
+    top: 0%;
+    left: 72%;
+    bottom: 164px;
+}
+
+
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (min-width: 823px) {
+
+    .menu-bar {
+        display: none;
+    }
+}
+@media only screen and (min-width: 2000px) {
+
+    #next, #prev {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1990px) {
+	  #next {
+        left: 97%;
+        
+    }
+	  #prev {
+        left: -2.5%;
+        
+    }
+	
+}
+@media only screen and (max-width: 1600px) {
+    body {
+        overflow-x: hidden;
+        margin: 0px;
+    }
+
+    .col1,
+    .nt {
+        width: 89%;
+        justify-content: space-evenly;
+        height: 257px;
+    }
+
+    #busca {
+        right: 100px
+    }
+
+    .ferramentas,
+    .versoes {
+        right: 0;
+    }
+
+    #prev {
+        left: -3.5%;
+        zoom: 98%;
+    }
+	 #next {
+        left: 96%;
+        zoom: 98%;
+    }
+
+    .setas {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .col1,
+    .nt {
+        width: 94%;
+        height: 279px;
+    }
+
+    #next {
+        left: 95%;
+        zoom: 98%;
+    }
+
+    #prev {
+        left: -4%;
+        zoom: 98%;
+    }
+
+    .setas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 897px) {
+    body {
+        overflow-x: hidden;
+        margin: 0px;
+    }
+
+    #busca {
+        width: 20%;
+        position: relative;
+        bottom: 93px;
+        right: 17px;
+    }
+
+    .breadscrumbs {
+        width: 50%;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .col1,
+    .nt {
+        width: 96%;
+        height: 307px;
+    }
+
+    .ferramentas,
+    .versoes {
+        margin: 0;
+        /* margin: 0px -15px */
+    }
+
+    .cabecalho {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cabecalho img {
+        width: 92px;
+        margin-top: 0.5%;
+        margin-left: 2%;
+    }
+
+    .ferramentas li {
+        left: -4px;
+    }
+
+    .versoes li {
+        left: -1px;
+    }
+
+    footer span {
+        position: absolute;
+        right: 140px;
+    }
+
+    .col1 a,
+    .nt a {
+        padding-bottom: 14px;
+        font-size: 15pt;
+    }
+
+    .livros-principal select#ilivros {
+        margin: 51px 27px 38px 0px;
+    }
+
+    footer#rodape {
+        width: 100%;
+    }
+
+    #next {
+        left: 94%;
+        zoom: 95%;
+    }
+
+    #prev {
+        left: -4.5%;
+        zoom: 95%;
+    }
+
+    .setas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 822px) {
+    body {
+        overflow-x: hidden;
+        margin: 0px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .ferramentas,
+    .versoes {
+        display: none;
+    }
+
+
+    /*   input#busca {
+        width: 55%;
+        position: relative;
+        bottom: -28px;
+        right: 47px;
+    } */
+
+    #busca-principal {
+        position: relative;
+        top: -9px;
+        left: 39%;
+        width: 55%;
+    }
+
+    nav {
+        margin-left: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    .menu-bar {
+        background: whitesmoke;
+        text-align: center;
+    }
+
+    .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+
+    .menu-bar ul li {
+        width: 120px;
+        margin: 2px;
+        padding: 0px;
+    }
+
+    .menu-bar ul li a {
+        text-decoration: none;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 13pt;
+    }
+
+    .active,
+    .menu-bar ul li:hover {
+        background: #cccccc;
+        border-radius: 3px;
+    }
+
+    .sub-menu-1 {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background: #cccccc;
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #606060;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+
+    .int {
+        width: 95%;
+    }
+
+    .col1,
+    .nt {
+        height: 356px;
+    }
+
+    /*.col1 a, .nt a {
+    padding-bottom: 14px;
+    font-size: 14pt;
+
+    } */
+
+    .livros h1 {
+        margin-left: 5px;
+
+    }
+
+    footer#rodape {
+        width: 100%;
+        /*  margin-left: 14px; */
+        position: relative;
+       
+    }
+
+   
+    #next {
+        left: 93%;
+        zoom: 85%;
+    }
+
+    #prev {
+        left: -4.7%;
+        zoom: 85%;
+    }
+
+    .setas {
+        display: none;
+    }
+
+    #versaoLv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    .livros-principal {
+        margin-top: 15px;
+    }
+
+    .col1,
+    .nt {
+        height: 390px;
+    }
+
+    #next {
+        left: 91.7%;;
+        zoom: 85%;
+    }
+
+    #prev {
+        left:-6%;;
+        zoom: 85%;
+    }
+
+    .setas {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 641px) {
+        body {
+            overflow-x: hidden;
+            margin: 0px;
+        }
+
+        /*    .cabecalho em {
+            font-size: 20pt;
+        } */
+
+        .cabecalho img {
+            width: 90px;
+            margin-left: 3%;
+            margin-top: 2%
+        }
+
+        .int p {
+            width: 98%;
+            font-size: 12pt;
+            margin-top: 35px;
+
+        }
+
+        main {
+            width: 100%;
+        }
+
+        .col1,
+        .nt {
+            width: 100%;
+            margin-left: 19px;
+            height: 429px;
+        }
+
+        .col1 a,
+        .nt a {
+            font-size: 14pt;
+        }
+
+        .livros h1 {
+            font-size: 18pt;
+        }
+
+        .nt p {
+            /* margin-top: 53px; */
+            padding-bottom: 12px;
+        }
+
+        .livros p {
+            margin-bottom: 10%;
+
+            margin-top: 25%;
+        }
+
+        .livros-principal {
+            margin-top: 15px;
+        }
+
+        .cabecalho em {
+            font-size: 20pt;
+        }
+
+        footer span {
+            visibility: hidden;
+        }
+
+        #versaoLv {
+            display: none;
+        }
+       
+
+        .breadscrumbs .bx-home {
+            font-size: 22pt;
+        }
+
+
+    }
+
+
+    @media only screen and (max-width: 566px) {
+        .livros-principal select#ilivros {
+            width: 154px;
+            height: 37px;
+        }
+
+        .col1,
+        .nt {
+            height: 471px;
+            margin-bottom: 96px;
+        }
+
+        .texto {
+            width: 100%;
+        }
+
+          #next {
+            
+            left: 90.5%;
+            zoom: 80%;
+        }
+        #prev {
+            
+            left: -6.8%;
+            zoom: 80%;
+        }
+        #rodape {
+            position: relative;
+            margin-top: 70%;
+        }
+        footer#rodapeP {
+            margin-top: 100%;
+        }
+    }
+
+    input#busca {
+        display: none;
+    }
+
+    #versaoLv {
+        display: none;
+    }
+    footer#rodapeP {
+        margin-top: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .livros-principal {
+        zoom: 84%;
+        margin-top: 93px;
+    }
+
+    .vt p {
+        margin-top: 21px;
+    }
+
+    .nt p {
+        margin-top: 74px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    #rodape {
+        position: relative;
+        margin-top: 77% !important;
+    }
+
+    .cabecalho em {
+        font-size: 16pt;
+    }
+
+    #next {
+        /* left: 91%;
+            zoom: 73%;
+            opacity: 0.7; */
+        display: none;
+    }
+
+    #prev {
+        /*  left: -8%;
+            zoom: 73%;
+            opacity: 0.7; */
+        display: none;
+    }
+
+    #versaoLv {
+        display: none;
+    }
+
+    .setas {
+        display: block !important;
+    }
+
+    footer#rodapeP {
+        margin-top: 500px;
+    }
+
+}
+
